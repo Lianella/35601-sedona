@@ -9,113 +9,111 @@
     <header>
     	<nav class="navigation">
     		<ul>
-    			<li>
-    				<a class="info" href="#">Информация</a>
+    			<li class="navigation-item">
+    				<a href="#">Информация</a>
     			</li>
-    			<li>
-    				<a class="media" href="#">Фото и видео</a>
+    			<li class="navigation-item">
+    				<a href="#">Фото и видео</a>
     			</li>
-    			<li>
-    				<a class="maps" href="#">Карта штата</a>
+    			<li class="navigation-item">
+    				<a href="#">Карта штата</a>
     			</li>
-    			<li>
-    				<a class="hotels" href="#">Гостиницы</a>
+    			<li class="navigation-item">
+    				<a href="#">Гостиницы</a>
     			</li>
     		</ul>    		
     	</nav>
-    	<div class="index-logo">
-    		<img src="img/index-logo.png" width="70" height="50">
+    	<div class="logo">
+    		<img src="img/logo.png" width="70" height="50">
     	</div>
     </header>
     <main>
     <!-- <div class="conteiner">   -->     
-            <form>
-                <div>
-                    <label for="infrastructure">Инфраструктура:</label>
-                    <ul class="form">
-                        <li>
-                            <label>
-                                <input type="checkbox" name="pool" checked="checked">
-                                Бассейн
+        <form>
+            <div class="quest">
+                <label for="infrastructure">Инфраструктура:</label>
+                <ul class="quest-item">
+                    <li>
+                        <label>
+                            <input type="checkbox" name="pool" checked="checked">
+                            Бассейн
                             </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="checkbox" name="parking">
-                                Парковка   
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="checkbox" name="wi-fi">
-                                Wi-Fi 
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-                <div class="form">
-                    <label for="type">Тип жилья:</label>
-                    <ul class="form">
-                        <li>
-                            <label>
-                                <input type="checkbox" name="hotel" checked="checked">
-                                Гостиница
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="checkbox" name="motel" checked="checked">
-                                Мотель
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="checkbox" name="apartments" checked="checked">
-                                Апартаменты
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-                <div class="form-price">
-                    <label for="price">Стоимость в сутки (р)</label>
-                    <input id="price" type="text" name="user-price" value="от О">
-                    <input id="price" type="text" name="user-price" value="до 3000">
-                    <input type="range" multiple="3000" name="price">
-                    <input type="submit" name="search" value="Показать">
-                </div>
-            </form>
-
-            <section>                           
-                    <div class="search-list">
-                       <h2>Найдено: 3</h2> 
-                       <p>Сортировка:</p>
-                       <ul class="search-text">
-                           <li>
-                               <a href="#">По цене</a>
-                           </li>
-                           <li>
-                               <a href="#">По типу</a>
-                           </li>
-                           <li>
-                               <a href="#">По рейтингу</a>
-                           </li>
-                       </ul>
-                       <button><img src="img/up-arrow"></button>
-                       <button><img src="img/down-arrow"></button>
-                    </div>
-            </section>        
-        
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="parking">
+                            Парковка   
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="wi-fi">
+                            Wi-Fi 
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="quest">
+                <label for="type">Тип жилья:</label>
+                <ul class="quest-item">
+                    <li>
+                        <label>
+                            <input type="checkbox" name="hotel" checked="checked">
+                            Гостиница
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="motel" checked="checked">
+                            Мотель
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="apartments" checked="checked">
+                            Апартаменты
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="quest-price">
+                <label for="price">Стоимость в сутки (р)</label>
+                <input id="price" type="text" name="user-price" value="от О">
+                <input id="price" type="text" name="user-price" value="до 3000">
+                <input type="range" multiple="3000" name="price">
+                <input type="submit" name="search" value="Показать">
+            </div>
+        </form>
+        <section class="quest-item">                           
+            <div class="quest-list">
+                <h2>Найдено: 3</h2> 
+                <p>Сортировка:</p>
+                <ul class="quest-text">
+                    <li>
+                        <a href="#">По цене</a>
+                    </li>
+                    <li>
+                        <a href="#">По типу</a>
+                    </li>
+                    <li>
+                        <a href="#">По рейтингу</a>
+                    </li>
+                </ul>
+                <button><img src="img/up-arrow"></button>
+                <button><img src="img/down-arrow"></button>
+            </div>
+        </section>
         <div class="list">
             <ul>
                 <li>
-                    <div class="list hotel">
+                    <div class="list-hotels">
                         <img src="img/hotel1">
                         <h2>Amara Resort & SPA</h2>
                         <p>Гостиница</p>
                         <p>от 3500 р.</p>
                         <input type="submit" name="more" value="Подробнее">
                         <input type="submit" name="book" value="Забронировать">
-                        <div>
+                        <div class="stars">
                            <i></i>
                            <i></i>
                            <i></i>
@@ -127,14 +125,14 @@
                     </div>
                 </li>
                 <li>
-                    <div class="list motel">
+                    <div class="list-hotels">
                         <img src="img/hotel2">
                         <h2>Desert Quail Inn</h2>
                         <p>Мотель</p>
                         <p>от 2000 р.</p>
                         <input type="submit" name="more" value="Подробнее">
                         <input type="submit" name="book" value="Забронировать">
-                        <div>
+                        <div class="stars">
                            <i></i>
                            <i></i>
                         </div>
@@ -144,14 +142,14 @@
                     </div>
                 </li>
                 <li>
-                    <div class="list apartments">
+                    <div class="list-hotels">
                         <img src="img/hotel3">
                         <h2>Villas at Poco Diablo</h2>
                         <p>Апартаменты</p>
                         <p>от 4000 р.</p>
                         <input type="submit" name="more" value="Подробнее">
                         <input type="submit" name="book" value="Забронировать">
-                        <div>
+                        <div class="stars">
                            <i></i>
                            <i></i>
                            <i></i>
@@ -164,14 +162,12 @@
             </ul>        
         </div>
     <!-- </div> -->
-
     </main>
-
     <footer>
-        <div class="visit-sedona">
-            <h2>#VisitSedona</h2>
+        <div class="footer-item">
+            <a href="#">#VisitSedona</a>
         </div>
-        <div class="social-networks">
+        <div class="footer-item">
             <ul>
                 <li>
                     <a href="#" class="icon icon-twitter"></a>
@@ -184,7 +180,7 @@
                 </li>
             </ul>
         </div>
-        <div class="website">
+        <div class="footer-item">
             <a href="#"><img src="img/website-photo"></a>
         </div>
     </footer>
