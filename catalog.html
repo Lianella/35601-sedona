@@ -24,20 +24,21 @@
     		</ul>    		
     	</nav>
     	<div class="logo">
-    		<img src="img/logo.png" width="70" height="50">
+    		<a href="index.html">
+                <img src="img/logo.png" width="70" height="50">
+            </a>
     	</div>
     </header>
     <main>
-    <!-- <div class="conteiner">   -->     
         <form>
             <div class="quest">
-                <label for="infrastructure">Инфраструктура:</label>
+                <h2>Инфраструктура:</h2>
                 <ul class="quest-item">
                     <li>
                         <label>
                             <input type="checkbox" name="pool" checked="checked">
                             Бассейн
-                            </label>
+                        </label>
                     </li>
                     <li>
                         <label>
@@ -54,7 +55,7 @@
                 </ul>
             </div>
             <div class="quest">
-                <label for="type">Тип жилья:</label>
+                <h2>Тип жилья:</h2>
                 <ul class="quest-item">
                     <li>
                         <label>
@@ -77,31 +78,55 @@
                 </ul>
             </div>
             <div class="quest-price">
-                <label for="price">Стоимость в сутки (р)</label>
+                <h2>Стоимость в сутки (р)</h2>
                 <input id="price" type="text" name="user-price" value="от О">
                 <input id="price" type="text" name="user-price" value="до 3000">
                 <input type="range" multiple="3000" name="price">
                 <input type="submit" name="search" value="Показать">
             </div>
         </form>
-        <section class="quest-item">                           
-            <div class="quest-list">
-                <h2>Найдено: 3</h2> 
-                <p>Сортировка:</p>
-                <ul class="quest-text">
-                    <li>
+        <section class="quest-item">
+            <h3>Найдено: 3</h3> 
+            <span>Сортировка:</span>
+            <ul class="quest-text">
+                <li>
+                    <div class="quest-list">
                         <a href="#">По цене</a>
-                    </li>
+                    </div>
+                </li>
+                <li>
+                    <div class="quest-list">
+                        <a href="#">По типу</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="quest-list">
+                        <a href="#">По рейтингу</a>
+                    </div>
+                </li>
+            </ul>
+            <div>   
+                <button><img src="img/up-arrow"></button>
+                <button><img src="img/down-arrow"></button>
+                </div> 
+            <!--
+            <div class="quest-list">
+                <h3>Найдено: 3</h3> 
+                <span>Сортировка:</span>
+                    <li>                    
+                        <a href="#">По цене</a>                   
+                    </li>                    
                     <li>
                         <a href="#">По типу</a>
                     </li>
                     <li>
                         <a href="#">По рейтингу</a>
                     </li>
-                </ul>
+               
                 <button><img src="img/up-arrow"></button>
                 <button><img src="img/down-arrow"></button>
-            </div>
+            </div> -->
+            
         </section>
         <div class="list">
             <ul>
@@ -161,7 +186,6 @@
                 </li>
             </ul>        
         </div>
-    <!-- </div> -->
     </main>
     <footer>
         <div class="footer-item">
