@@ -1,4 +1,5 @@
 body {
+	max-width:1200px;
 	font-size: 14px;
     font-family: "PTSans",Arial,sans-serif;
     line-height: 21px;
@@ -16,4 +17,26 @@ h3 {
     font-family: PTSans,Arial,sans-serif;
     line-height: 24px;
     color: #000000;
+}
+/*header .logo {
+	display: a;
+	flex-direction: column;
+	justify-content: center;
+}*/
+.navigation-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+li {
+	width: 300px;
+    list-style-type: none;}
+.navigation-list a { 
+    text-decoration: none; 
+    color: #000000;
+    font-size: 16px;
+    line-height: 21px;
+} 
+.title {
+	
 }
