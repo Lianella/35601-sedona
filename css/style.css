@@ -1,5 +1,4 @@
-body {
-	max-width:1200px;
+body {	
 	font-size: 14px;
     font-family: "PTSans",Arial,sans-serif;
     line-height: 21px;
@@ -9,6 +8,10 @@ body {
     /* 
     background: #000000 url("../img/sedona-hotels-1200.jpg") no-repeat -40px 3px;
     opacity: 0.7;*/
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
 }
 h2 {
 	font-size: 21px;
@@ -29,6 +32,10 @@ p {
     line-height: 26px;
     color: #000000;
 }
+ img {
+	max-width: 100%;
+	height:auto;
+}
 /*header .logo {
 	display: a;
 	flex-direction: column;
@@ -44,7 +51,7 @@ p {
 	justify-content: space-around;
 }
 li {
-	width: 300px;
+	width: 240px;
     list-style-type: none;}
 a {
 	text-decoration: none; 
@@ -58,10 +65,6 @@ a {
     padding-top: 20px;
 	padding-bottom: 25px;
 } 
-.base, article {
-	width: 1200px;
-	margin: 0 auto;
-}
 .title {
 	display: flex;
 	flex-direction: column;
