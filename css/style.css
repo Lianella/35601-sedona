@@ -14,21 +14,20 @@ body {
 	margin: 0 auto;
 }
 h2 {
-	font-size: 21px;
-    font-family: "PTSans",Arial,sans-serif;
+	font-size: 21px;    
     line-height: 21px;
     color: #000000;
-
 }
 h3 {
-	font-size: 30px;
-    font-family: "PTSans",Arial,sans-serif;
+	font-size: 30px;   
     line-height: 24px;
     color: #000000;
 }
+h4 {
+
+}
 p {
-	font-size: 14px;
-    font-family: "PTSans",Arial,sans-serif;
+	font-size: 14px;    
     line-height: 26px;
     color: #000000;
 }
@@ -81,15 +80,16 @@ a {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	padding-top: 65px;
+	padding-bottom: 57px;
 }
 .description h2 {
 	align-self: center;
-	padding-top: 65px;
+	
 	padding-bottom: 30px;
 }
 .description p {
-	align-self: center;	
-	padding-bottom: 55px;
+	align-self: center;
 }
 .reasons {
 	display: flex;
@@ -186,6 +186,7 @@ footer {
 	flex-direction: row;
 	justify-content: center;
 	align-content: space-around;
+	background: rgba(255,255,255, 0,8);
 }
 .footer-item {
 	width: 400px;
@@ -193,63 +194,73 @@ footer {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
+/*   Страница catolog.html */
 .quest-form {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	background-image: url(../img/filter-background.jpg);
+	color: #ffffff;
+}
+.quest {
+	width: 264px;
+}
+.quest-price {
+	width: 528px;
 }
 .quest-item {
 	padding-bottom: 30px;
 }
 .quest-item li {
-	padding-top: 25px;	
+	padding-top: 25px;	/*интервал между списками в форме*/
 }
-.quest h2, .quest-price h2 {
+.quest h2, .quest-price h2 { /* Инфраструктура, Тип жилья, стоимость в сутки*/
+	font-size: 16px;    
+    line-height: 21px;
+    color: #ffffff;
 	padding-top: 30px;
 	padding-bottom: 5px;
 }
-.quest-sorting, .hotels {
+.quest-sorting, .hotels { /*section и article после формы*/
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
+	flex-direction: row;	
 }
 .quest-sorting {
-	width: 705px;
+	align-items: flex-end;
+}
+.quest-picking {
+	display: flex;
+	flex-direction: row;	
 }
 .quest-text {
-	width: 330px;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-	flex-wrap: nowrap;
+	width: 165px;	
+/*	margin-top: 30px;
+	margin-bottom: 35px;*/
 }
-.quest-text h2 {
-	margin-top: 30px;
-	margin-bottom: 35px;
-}
-.quest-text span {
+/*.quest-text span {
 	margin-top: 40px;
 	margin-bottom: 35px;
-}
+}*/
 .quest-list {
-	width: 600px;	
+	width: 781px;	
+	font-size: 12px;    
+    line-height: 18px;
 }
 .quest-list a {
 	margin-top: 40px;
-	margin-bottom: 35px;	
+	margin-bottom: 36px;	
 	opacity: 0.7; /* Значение прозрачности */
     filter: alpha(Opacity=70); /* Прозрачность в IE */
 	color: #000000;
 }
-
-.quest-arrow ul{
-	width: 165px;
+.quest-arrow {
+	width: 110px;	
+}
+.quest-arrow ul{	
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;	
-}
+}/*
 .quest-arrow a:first-child {
 	width: 15px;
 	height: 15px;
@@ -261,33 +272,45 @@ footer {
 	height: 15px;
 	background: url(../img/sprite-sedona.png) no-repeat;
 	background-position: -35px -5px;
-}
+}*/
 .quest:first-child, .quest-text, .hotels-image {
-	margin-left: 70px;
+	padding-left: 72px;
 }
 .hotels-image {
+	width: 165px;
 	margin-top: 30px;
 }
 .hotels-info {
-	width: 790px;
-	margin-left: 30px;
-	margin-top: 15px;
-	
+	width: 781px;
+	/*margin-left: 30px;
+	margin-top: 15px;	*/
 	display: flex;
 	flex-direction: column;
+}
+.hotels-info h2 {
+	font-size: 21px;    
+    line-height: 26px;
+    font-weight: bold;
+
+}
+.quest-price, .hotel-rating {
+	padding-right: 72px;
 }
 .stars {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
 	margin-top: 30px;
-	margin-bottom: 45px;
+	margin-bottom: 45px;	
 }
 i {	
 	width: 20px;
 	height: 20px;
 	background: url(../img/sprite-sedona.png) no-repeat;
 	background-position: -255px -50px;
+}
+.hotel-rating {
+	width: 110px;
 }
 .rating {
 	/*width: 110px;*/
@@ -298,7 +321,7 @@ i {
 	background-color: #f2f2f2;
 	margin-bottom: 30px;
 }
-.info-link a {
+.info-link a, .info-span a {
 	font-weight: bold;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -306,15 +329,26 @@ i {
 	padding-right: 15px;
 	color: #ffffff;	
 }
-.info-link a:first-child {
+.info-span a:last-child {
 		
 	user-select: none;
 	background-color: #81b3d2;	
 }
-.info-link a:last-child {
-		
+.info-link a:last-child {		
 	background-color: #766357;
 }
 .info-span {
 	padding-bottom: 15px;
+	margin-right: 6px;
+}
+.info-list {
+	display: flex;
+	flex-direction: row;
+}
+.info-span, .info-link {
+	display: flex;
+	flex-direction: column;
+}
+.info-list span {
+	padding-bottom: 18px;
 }
