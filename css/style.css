@@ -41,6 +41,10 @@ p {
 	display: flex;
 	justify-content: center;
 }*/
+.navigation {
+	padding-top: 14px;
+	padding-bottom: 16px;
+}
 .navigation-list {
 	display: flex;
 	flex-direction: row;
@@ -60,14 +64,19 @@ ul {
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
-    padding-top: 20px;
-	padding-bottom: 25px;
+    
 } 
 .navigation-list li {    
 	width: 240px;
 }
+.navigation-list li:first-child {    
+	padding-left:72px;
+}
 .navigation-list li:nth-child(2) {    
 	margin-right:240px;
+}
+.navigation-list li:last-child {    
+	padding-right:72px;
 }
 .title {
 	display: flex;
@@ -126,6 +135,7 @@ ul {
 .reasons-image {
 	width: 800px;
 	align-self: center;
+	line-height: 0; 
 }
 .internals {
 	display: flex;
@@ -198,13 +208,15 @@ footer {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
-/*   Страница catolog.html */
+/*   -------------Страница catolog.html-------------------------- */
 .quest-form {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	background-image: url(../img/filter-background.jpg);
 	color: #ffffff;
+	padding-top: 29px;
+	padding-bottom: 32px;
 }
 .quest {
 	width: 264px;
@@ -212,50 +224,37 @@ footer {
 .quest-price {
 	width: 528px;
 }
-.quest-item {
-	padding-bottom: 30px;
-}
 .quest-item li {
-	padding-top: 25px;	/*интервал между списками в форме*/
+	padding-top: 24px;
+}	/*интервал между списками в форме
 }
 .quest-item li:first-child {
-	padding-top: 0;	/*интервал между списками в форме*/
-}
+	padding-top: 0;	/*интервал между списками в форме
+}*/
 .quest h2, .quest-price h2 { /* Инфраструктура, Тип жилья, стоимость в сутки*/
 	font-size: 16px;    
     line-height: 21px;
-    color: #ffffff;
-	padding-top: 30px;
-	padding-bottom: 5px;
+    color: #ffffff;	
 }
 .quest-sorting, .hotels { /*section и article после формы*/
 	display: flex;
 	flex-direction: row;	
 }
-.quest-sorting {
+.quest-sorting {   /*Сортировка по типу рейтингу*/
 	align-items: flex-end;
 	background-color: #fefefe;
-
-	/*padding-top: 31px;
-	padding-bottom: 34px;*/
+	padding-top: 31px;
+	padding-bottom: 34px;
 }
-.quest-picking {
+.quest-picking { /* ul в quest-sorting*/
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
-.quest-picking span {
-	margin-top: 0;
-	margin-bottom: 0;
-}
-.quest-text {
+.quest-text {  /* Найдено: 3 */
 	width: 165px;
 }
-.quest-text h2 {
-	margin-top: 0;
-	margin-bottom: 0;
-}
-.quest-list {
+.quest-list {  /* контейнер Сортировка по типу рейтингу*/
 	width: 781px;	
 	font-size: 12px;    
     line-height: 18px;
@@ -285,22 +284,26 @@ footer {
 	background: url(../img/sprite-sedona.png) no-repeat;
 	background-position: -35px -5px;
 }*/
-.quest:first-child {
-	padding-left: 72px;
-}
-.hotels, .quest-sorting {  /*article с гостиницами */
+.quest-form, .hotels, .quest-sorting {  /*article с гостиницами */
 	padding-left: 72px;
 	padding-right: 72px;
 	background-color: #fefefe;
 }
-.hotels-image {
-	width: 165px;
-	margin-top: 30px;
+.hotels {
+	padding-top: 31px;
+	padding-bottom: 30px;
 }
+.hotels-image {      /*изображение отелей*/
+	width: 165px;
+	line-height: 0; 	
+}
+/*------------------нулевые маргины---------------- */
+.navigation-list, .quest h2, .quest-price h2, .quest-item, .quest-picking, .quest-text h2, .quest-arrow ul, .hotels-image, .hotels-info h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+}	
 .hotels-info {
 	width: 781px;
-	/*margin-left: 30px;
-	margin-top: 15px;	*/
 	display: flex;
 	flex-direction: column;
 }
@@ -308,17 +311,14 @@ footer {
 	font-size: 21px;    
     line-height: 26px;
     font-weight: bold;
+    padding-bottom: 6px;
 
-}
-.quest-price {
-	padding-right: 72px;
 }
 .stars {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-	margin-top: 30px;
-	margin-bottom: 45px;	
+	padding-bottom: 36px;
 }
 i {	
 	width: 20px;
@@ -327,24 +327,22 @@ i {
 	background-position: -255px -50px;
 }
 .hotel-rating {
-	width: 110px;
+	width: 110px;	
 }
 .rating {
-	/*width: 110px;*/
+	width: 100%;
+	text-align: center;
 	padding-top: 5px;
 	padding-bottom: 8px;	
-	padding-left: 15px;
-	padding-right: 15px;
 	background-color: #f2f2f2;
-	margin-bottom: 30px;
+	
 }
 .rating span {
 	line-height: 21px;
 }
 .info-link a, .info-span a {
 	font-weight: bold;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 5px;	
 	padding-left: 17px;
 	padding-right: 15px;
 	color: #ffffff;	
@@ -358,7 +356,6 @@ i {
 	background-color: #766357;
 }
 .info-span {
-	padding-bottom: 15px;
 	margin-right: 6px;
 }
 .info-list {
@@ -369,6 +366,6 @@ i {
 	display: flex;
 	flex-direction: column;
 }
-.info-list span {
-	padding-bottom: 18px;
+.info-list span, .info-span span {
+	padding-bottom: 11px;
 }
