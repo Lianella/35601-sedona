@@ -23,9 +23,6 @@ h3 {
     line-height: 24px;
     color: #000000;
 }
-h4 {
-
-}
 p {
 	font-size: 14px;    
     line-height: 26px;
@@ -49,14 +46,16 @@ p {
 	flex-direction: row;
 	justify-content: space-around;
 }
-li {
-	width: 240px;
-    list-style-type: none;}
+li {	
+    list-style-type: none;
+}
 a {
 	text-decoration: none; 
     color: #000000;
 }
-
+ul {
+	padding-left: 0;
+}
 .navigation-list a {    
     font-size: 14px;
     line-height: 26px;
@@ -64,6 +63,12 @@ a {
     padding-top: 20px;
 	padding-bottom: 25px;
 } 
+.navigation-list li {    
+	width: 240px;
+}
+.navigation-list li:nth-child(2) {    
+	margin-right:240px;
+}
 .title {
 	display: flex;
 	flex-direction: column;
@@ -84,8 +89,7 @@ a {
 	padding-bottom: 57px;
 }
 .description h2 {
-	align-self: center;
-	
+	align-self: center;	
 	padding-bottom: 30px;
 }
 .description p {
@@ -214,6 +218,9 @@ footer {
 .quest-item li {
 	padding-top: 25px;	/*интервал между списками в форме*/
 }
+.quest-item li:first-child {
+	padding-top: 0;	/*интервал между списками в форме*/
+}
 .quest h2, .quest-price h2 { /* Инфраструктура, Тип жилья, стоимость в сутки*/
 	font-size: 16px;    
     line-height: 21px;
@@ -227,28 +234,33 @@ footer {
 }
 .quest-sorting {
 	align-items: flex-end;
+	background-color: #fefefe;
+
+	/*padding-top: 31px;
+	padding-bottom: 34px;*/
 }
 .quest-picking {
 	display: flex;
-	flex-direction: row;	
+	flex-direction: row;
+	align-items: center;
+}
+.quest-picking span {
+	margin-top: 0;
+	margin-bottom: 0;
 }
 .quest-text {
-	width: 165px;	
-/*	margin-top: 30px;
-	margin-bottom: 35px;*/
+	width: 165px;
 }
-/*.quest-text span {
-	margin-top: 40px;
-	margin-bottom: 35px;
-}*/
+.quest-text h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
 .quest-list {
 	width: 781px;	
 	font-size: 12px;    
     line-height: 18px;
 }
 .quest-list a {
-	margin-top: 40px;
-	margin-bottom: 36px;	
 	opacity: 0.7; /* Значение прозрачности */
     filter: alpha(Opacity=70); /* Прозрачность в IE */
 	color: #000000;
@@ -273,8 +285,13 @@ footer {
 	background: url(../img/sprite-sedona.png) no-repeat;
 	background-position: -35px -5px;
 }*/
-.quest:first-child, .quest-text, .hotels-image {
+.quest:first-child {
 	padding-left: 72px;
+}
+.hotels, .quest-sorting {  /*article с гостиницами */
+	padding-left: 72px;
+	padding-right: 72px;
+	background-color: #fefefe;
 }
 .hotels-image {
 	width: 165px;
@@ -293,7 +310,7 @@ footer {
     font-weight: bold;
 
 }
-.quest-price, .hotel-rating {
+.quest-price {
 	padding-right: 72px;
 }
 .stars {
@@ -320,6 +337,9 @@ i {
 	padding-right: 15px;
 	background-color: #f2f2f2;
 	margin-bottom: 30px;
+}
+.rating span {
+	line-height: 21px;
 }
 .info-link a, .info-span a {
 	font-weight: bold;
