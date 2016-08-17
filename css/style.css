@@ -1,3 +1,9 @@
+@font-face {
+	font-family: 'MyWebFont';
+	src: url('myfont.woff2') format('woff2'),
+	url('myfont.woff') format('woff');
+}
+*{box-sizing:border-box;}
 body {	
 	font-size: 14px;
     font-family: "PTSans",Arial,sans-serif;
@@ -5,7 +11,7 @@ body {
     color: #000000;
     background-color: #ffffff;
     text-transform: uppercase;
-    /* 
+    /*
     background: #000000 url("../img/sedona-hotels-1200.jpg") no-repeat -40px 3px;
     opacity: 0.7;*/
 }
@@ -32,15 +38,14 @@ p {
 	max-width: 100%;
 	height:auto;
 }
-/*header .logo {
-	display: a;
-	flex-direction: column;
-	justify-content: center;
-}*/
-/*section {
-	display: flex;
-	justify-content: center;
-}*/
+.logo img {
+	width: 138px;
+	height: 70px;
+	position: absolute;
+	top:0;
+	left:50%;
+	margin-left: -69px;	
+}
 .navigation {
 	padding-top: 14px;
 	padding-bottom: 16px;
@@ -60,6 +65,7 @@ a {
 ul {
 	padding-left: 0;
 }
+/*-----------------Навигационное меню---------------- */
 .navigation-list a {    
     font-size: 14px;
     line-height: 26px;
@@ -78,6 +84,10 @@ ul {
 .navigation-list li:last-child {    
 	padding-right:72px;
 }
+.navigation-list li:nth-child(3), .navigation-list li:last-child {
+	text-align: right;
+}
+/*-----------------Изображение с приветствием------------------*/
 .title {
 	display: flex;
 	flex-direction: column;
@@ -94,16 +104,17 @@ ul {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding-top: 65px;
+	padding-top: 60px;
 	padding-bottom: 57px;
 }
 .description h2 {
 	align-self: center;	
-	padding-bottom: 30px;
 }
 .description p {
+	padding-top: 31px;
 	align-self: center;
 }
+/* ----------Причины посетить Седону---------------------*/
 .reasons {
 	display: flex;
 	flex-direction: row;
@@ -111,6 +122,10 @@ ul {
 }
 .reasons-blue {
 	background-color: #81b3d2;
+	color: #ffffff;
+}
+.reasons-blue p, .reasons-blue h2 {
+	color: #ffffff; 
 }
 .reasons-gray {
 	background-color: #eeeeee;
@@ -119,28 +134,42 @@ ul {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	text-align: center;		
 	width: 400px;
 	align-items: center;
-}
-.reasons-item h2 {
-	padding-top: 50px;
-	padding-bottom: 25px;
+	padding-top: 53px;
+	padding-bottom: 50px;
+	padding-left: 27px;
+	padding-right: 27px;	
 }
 .reasons-item span {	
-	padding-bottom: 30px;
+	padding-top: 21px;
+	padding-bottom: 21px;
 }
 .reasons-item p {	
-	padding-bottom: 55px;
+	line-height: 21px;
 }
 .reasons-image {
 	width: 800px;
 	align-self: center;
 	line-height: 0; 
 }
-.internals {
+/*.reasons-blue .reasons-item {
+	padding-left: 25px;
+	padding-right: 25px;
+}	*/
+
+.reasons-gray .reasons-item {
+	padding-top: 47px;
+	padding-bottom: 62px;
+}
+/*---------------Жилье, Еда, Сувениры ---------------------*/
+.internals-white {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	padding-top: 53px;
+	padding-bottom: 75px;
 }
 .internals-item {
 	display: flex;
@@ -148,39 +177,63 @@ ul {
 	justify-content: center;
 	width: 400px;
 	align-items: center;
-}
-.internals-item img {
-	padding-top: 60px;
-	padding-bottom: 30px;
+	text-align: center;	
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .internals-item h2 {
-	padding-bottom: 25px;
+	padding-top: 30px;
+	padding-bottom: 27px;
 }
-.internals-item p {
-	padding-bottom: 85px;
+.internals-item .house {
+	width: 75px;
+	height: 77px;
+	background: url(../img/sprite-sedona.png) no-repeat;
+	background-position: -78px -115px;
 }
+.internals-item .food {
+	width: 75px;
+	height: 75px;
+	background: url(../img/sprite-sedona.png) no-repeat;
+	background-position: -78px -36px;
+}
+.internals-item .souvenirs {
+	width: 75px;
+	height: 79px;
+	background: url(../img/sprite-sedona.png) no-repeat;
+	background-position: 0px -36px;
+}
+/*-------------Заинтересовались?------------------*/
 .interested {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;	
+	align-items: center;
+	text-align: center;
+	padding-left: 312px;
+	padding-right: 312px;	
+	padding-top: 55px;	
 }
 .interested h3 {
-	padding-top: 55px;
-	padding-bottom: 30px;
-
+	padding-bottom: 35px;
 }
 .interested p {
-	padding-bottom: 50px;
+	padding-bottom: 40px;
+	padding-left: 71px;
+	padding-right: 71px;
 }
 .interested a {
-	width: 290px;
-	padding-top: 35px;
-	padding-bottom: 35px;
-	padding-left: 140px;
-	padding-right: 140px;
+	width: 575px;
+	text-align: center;	
+	padding-top: 43px;
+	padding-bottom: 43px;
+	/*padding-left: 140px;
+	padding-right: 140px;*/
 	background-color: #766357;	
 	color: #ffffff;
+	font-size: 21px;
+    line-height: 0px;
+    font-weight: bold;
 }
 .map {
 	display: flex;
@@ -195,18 +248,31 @@ ul {
 	margin-bottom: 80px;
 	background-color: #ffffff;
 }
+/*-------------------Подвал-----------------*/
 footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-content: space-around;
+	align-items: center;
 	background: rgba(255,255,255, 0,8);
+	padding-top: 38px;
+	padding-bottom: 38px;
 }
 .footer-item {
 	width: 400px;
 	align-self: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	text-align: center;
+
+}
+.footer-item:first-child a {
+	font-size: 21px;
+    line-height: 0px;
+    font-weight: bold;
+}
+.footer-item span {
+	font-size: 14px;
+    line-height: 0px;
 }
 /*   -------------Страница catolog.html-------------------------- */
 .quest-form {
@@ -298,7 +364,23 @@ footer {
 	line-height: 0; 	
 }
 /*------------------нулевые маргины---------------- */
-.navigation-list, .quest h2, .quest-price h2, .quest-item, .quest-picking, .quest-text h2, .quest-arrow ul, .hotels-image, .hotels-info h2 {
+.navigation-list, 
+.description h2, 
+.description p, 
+.reasons-item h2,
+.reasons-item p,
+.internals-item h2,
+.internals-item p,
+.interested h3,
+.interested p,
+.quest h2, 
+.quest-price h2, 
+.quest-item, 
+.quest-picking, 
+.quest-text h2, 
+.quest-arrow ul, 
+.hotels-image, 
+.hotels-info h2 {
 	margin-top: 0;
 	margin-bottom: 0;
 }	
