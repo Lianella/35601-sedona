@@ -1,7 +1,7 @@
 @font-face {
-	font-family: 'MyWebFont';
-	src: url('myfont.woff2') format('woff2'),
-	url('myfont.woff') format('woff');
+	font-family: 'PTSans';
+	src: url('../fonts/ptsans.woff2') format('woff2'),
+	url('../fonts/ptsans.woff') format('woff');
 }
 *{box-sizing:border-box;}
 body {	
@@ -265,15 +265,69 @@ footer {
 	text-align: center;
 
 }
+.footer-item ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
 .footer-item:first-child a {
 	font-size: 21px;
     line-height: 0px;
     font-weight: bold;
 }
 .footer-item span {
+	position: relative;
 	font-size: 14px;
     line-height: 0px;
+    padding-right: 135px;    
 }
+.footer-item span::after {
+	content: " ";
+	display: inline-block;
+	position: absolute;
+	vertical-align: top;
+	width: 115px;
+	height: 40px;
+	background: #ffffff url(../img/spritesheet.png) no-repeat;
+	background-position: -5px -155px;
+	top: -50%;	
+	right: 10px;
+}
+.footer-item span:hover::after {
+	background: #ffffff url(../img/spritesheet.png) no-repeat;
+	background-position: -228px -54px;
+}
+.footer-item span:active::after {
+	background: #ffffff url(../img/spritesheet.png) no-repeat;
+	background-position: -249px -5px;
+}
+.icon {
+	display: inline-block;
+  	width: 46px;
+  	height: 48px;
+  	margin: 0 3px;
+  	font-size: 0;
+  	vertical-align: top;
+  	text-decoration: none;
+  	background: #81b3d2 url("../img/spritesheet.png") no-repeat center;
+}
+.icon:hover {
+	background: #669ec0 url("../img/spritesheet.png") no-repeat center;
+}
+.icon:active {
+	background: #5496bd url("../img/spritesheet.png") no-repeat center;
+}
+.icon-twitter, .icon-twitter:hover {
+	background-position: -310px -120px;
+}
+.icon-facebook, .icon-facebook:hover {
+	background-position: -5px -69px;
+}
+.icon-YouTube, .icon-YouTube:hover {
+	background-position: -5px -5px;
+}
+
+
 /*   -------------Страница catolog.html-------------------------- */
 .quest-form {
 	display: flex;
@@ -380,7 +434,8 @@ footer {
 .quest-text h2, 
 .quest-arrow ul, 
 .hotels-image, 
-.hotels-info h2 {
+.hotels-info h2,
+.footer-item ul {
 	margin-top: 0;
 	margin-bottom: 0;
 }	
@@ -408,7 +463,7 @@ i {
 	background: url(../img/sprite-sedona.png) no-repeat;
 	background-position: -255px -50px;
 }
-.hotel-rating {
+.hotels-ratings {
 	width: 110px;	
 }
 .rating {
