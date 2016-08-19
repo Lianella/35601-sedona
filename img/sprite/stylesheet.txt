@@ -10,170 +10,188 @@
     background-position: -5px -5px;
 }
 
+.sprite-YouTube-down {
+    width: 46px;
+    height: 48px;
+    background-position: -61px -5px;
+}
+
 .sprite-arrow-down {
     width: 11px;
     height: 10px;
-    background-position: -61px -5px;
+    background-position: -117px -5px;
 }
 
 .sprite-arrow-down-down {
     width: 11px;
     height: 10px;
-    background-position: -82px -5px;
+    background-position: -138px -5px;
 }
 
 .sprite-arrow-down-hover {
     width: 11px;
     height: 10px;
-    background-position: -103px -5px;
+    background-position: -159px -5px;
 }
 
 .sprite-arrow-up {
     width: 11px;
     height: 10px;
-    background-position: -124px -5px;
+    background-position: -180px -5px;
 }
 
 .sprite-arrow-up-down {
     width: 11px;
     height: 10px;
-    background-position: -145px -5px;
+    background-position: -201px -5px;
 }
 
 .sprite-arrow-up-hover {
     width: 11px;
     height: 10px;
-    background-position: -166px -5px;
+    background-position: -222px -5px;
 }
 
 .sprite-calendar {
     width: 21px;
     height: 22px;
-    background-position: -187px -5px;
+    background-position: -117px -25px;
 }
 
 .sprite-calendar-down {
     width: 21px;
     height: 22px;
-    background-position: -218px -5px;
+    background-position: -148px -25px;
 }
 
 .sprite-calendar-hover {
     width: 21px;
     height: 22px;
-    background-position: -61px -37px;
+    background-position: -179px -25px;
 }
 
 .sprite-checkbox {
     width: 26px;
     height: 22px;
-    background-position: -92px -37px;
+    background-position: -210px -25px;
 }
 
 .sprite-checkbox-down {
     width: 26px;
     height: 22px;
-    background-position: -128px -37px;
+    background-position: -117px -57px;
 }
 
 .sprite-checkbox-zero {
     width: 22px;
     height: 22px;
-    background-position: -164px -37px;
+    background-position: -153px -57px;
 }
 
 .sprite-checkbox-zero-down {
     width: 22px;
     height: 22px;
-    background-position: -196px -37px;
+    background-position: -185px -57px;
 }
 
 .sprite-facebook {
     width: 46px;
     height: 48px;
-    background-position: -5px -69px;
+    background-position: -5px -89px;
+}
+
+.sprite-facebook-down {
+    width: 46px;
+    height: 48px;
+    background-position: -61px -89px;
 }
 
 .sprite-gift {
     width: 64px;
     height: 76px;
-    background-position: -61px -69px;
+    background-position: -117px -89px;
 }
 
 .sprite-hamburger {
     width: 74px;
     height: 70px;
-    background-position: -135px -69px;
+    background-position: -5px -175px;
 }
 
 .sprite-house {
     width: 75px;
     height: 72px;
-    background-position: -135px -149px;
+    background-position: -89px -175px;
 }
 
 .sprite-htmlacademy {
     width: 113px;
     height: 39px;
-    background-position: -5px -155px;
+    background-position: -246px -5px;
 }
 
 .sprite-htmlacademy-down {
     width: 113px;
     height: 39px;
-    background-position: -249px -5px;
+    background-position: -246px -54px;
 }
 
 .sprite-htmlacademy-hover {
     width: 113px;
     height: 39px;
-    background-position: -228px -54px;
+    background-position: -191px -103px;
 }
 
 .sprite-minus {
     width: 12px;
     height: 12px;
-    background-position: -351px -54px;
+    background-position: -369px -5px;
 }
 
 .sprite-minus-down {
     width: 12px;
     height: 12px;
-    background-position: -351px -76px;
+    background-position: -369px -27px;
 }
 
 .sprite-minus-hover {
     width: 12px;
     height: 12px;
-    background-position: -351px -98px;
+    background-position: -369px -49px;
 }
 
 .sprite-plus {
     width: 11px;
     height: 11px;
-    background-position: -219px -120px;
+    background-position: -217px -71px;
 }
 
 .sprite-plus-down {
     width: 11px;
     height: 11px;
-    background-position: -240px -120px;
+    background-position: -369px -71px;
 }
 
 .sprite-plus-hover {
     width: 11px;
     height: 11px;
-    background-position: -261px -120px;
+    background-position: -369px -92px;
 }
 
 .sprite-stars {
     width: 18px;
     height: 17px;
-    background-position: -282px -103px;
+    background-position: -314px -103px;
 }
 
 .sprite-twitter {
     width: 46px;
     height: 48px;
-    background-position: -310px -120px;
+    background-position: -314px -130px;
+}
+
+.sprite-twitter-down {
+    width: 46px;
+    height: 48px;
+    background-position: -174px -188px;
 }

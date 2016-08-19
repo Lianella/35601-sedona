@@ -93,12 +93,20 @@ ul {
 	flex-direction: column;
 	justify-content: center;
 	background-image: url(../img/background-photo.jpg);
+	padding-top: 76px;
+	
 }
 .title img:first-child {	
-	width: 460px;
+	width: 458px;
+	height: 352;
 	align-self: center;
-	padding-top: 75px;
-	padding-bottom: 25px;
+	padding-bottom: 23px;
+}
+.title img:last-child {	
+	width: 1200px;
+	height: 57px;
+	height: auto;
+	align-self: center;
 }
 .description {
 	display: flex;
@@ -109,9 +117,12 @@ ul {
 }
 .description h2 {
 	align-self: center;	
+	padding-right: 300px;
+	padding-left: 300px;
+	text-align: center;
 }
 .description p {
-	padding-top: 31px;
+	padding-top: 32px;
 	align-self: center;
 }
 /* ----------Причины посетить Седону---------------------*/
@@ -139,18 +150,23 @@ ul {
 	align-items: center;
 	padding-top: 53px;
 	padding-bottom: 50px;
-	padding-left: 27px;
-	padding-right: 27px;	
+	padding-left: 50px;
+	padding-right: 45px;	
 }
 .reasons-item span {	
 	padding-top: 21px;
 	padding-bottom: 21px;
+}
+.reasons-item h2 {	
+	padding-left: 75px;
+	padding-right: 80px;
 }
 .reasons-item p {	
 	line-height: 21px;
 }
 .reasons-image {
 	width: 800px;
+	height: 256px;
 	align-self: center;
 	line-height: 0; 
 }
@@ -162,6 +178,8 @@ ul {
 .reasons-gray .reasons-item {
 	padding-top: 47px;
 	padding-bottom: 62px;
+	padding-left: 65px;
+	padding-right: 65px;
 }
 /*---------------Жилье, Еда, Сувениры ---------------------*/
 .internals-white {
@@ -172,18 +190,41 @@ ul {
 	padding-bottom: 75px;
 }
 .internals-item {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	width: 400px;
 	align-items: center;
 	text-align: center;	
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 .internals-item h2 {
-	padding-top: 30px;
+	padding-top: 102px;
 	padding-bottom: 27px;
+	padding-left: ;
+	padding-right: ;
+}
+.internals-item h2::after {
+	content: " ";
+	position: absolute;
+	top: 0px;
+	left: 164px;
+	width: 75px;
+	height: 76px;
+	background: transparent url(../img/spritesheet.png) no-repeat;	
+}
+.internals-item:first-child h2::after {
+	background-position: -89px -171px;
+}
+.internals-item:nth-child(2) h2::after {
+	background-position: -5px -171px;
+}
+.internals-item:last-child h2::after {
+	width: 64px;
+	height: 76px;
+	background-position: -117px -89px;
 }
 .internals-item .house {
 	width: 75px;
@@ -219,8 +260,8 @@ ul {
 }
 .interested p {
 	padding-bottom: 40px;
-	padding-left: 71px;
-	padding-right: 71px;
+	padding-left: 80px;
+	padding-right: 80px;
 }
 .interested a {
 	width: 575px;
@@ -242,11 +283,38 @@ ul {
 	align-items: center;
 	background-image: url(../img/search-maps.jpg);
 }
+/*--------------------------Форма на главной------------------*/
 .search-hotels {
 	width: 570px;
 	min-height: 385px; 
 	margin-bottom: 80px;
 	background-color: #ffffff;
+}
+
+.search-hotels .btn {
+	display: inline-block;
+	margin-top: 250px;
+  	padding: 10px 195px;
+	color: #ffffff;
+ 	background-color: #81b3d2;
+  	border: none;
+  	cursor: pointer;
+  	font-weight: 700;
+  	font-size: 21px;
+  	line-height: 26px;
+  	font-family: "PT Sans", "Arial", sans-serif;
+  	vertical-align: top;
+  	text-align: center;
+  	color: #ffffff;
+  	text-transform: uppercase;
+  	text-decoration: none;
+}
+.search-hotels .btn:hover {
+	background-color: #669ec0;
+}
+.search-hotels .btn:active {
+	opacity: 0.7;
+	background-color: #5496bd;
 }
 /*-------------------Подвал-----------------*/
 footer {
@@ -289,17 +357,17 @@ footer {
 	width: 115px;
 	height: 40px;
 	background: #ffffff url(../img/spritesheet.png) no-repeat;
-	background-position: -5px -155px;
+	background-position: -246px -5px;;
 	top: -50%;	
 	right: 10px;
 }
 .footer-item span:hover::after {
 	background: #ffffff url(../img/spritesheet.png) no-repeat;
-	background-position: -228px -54px;
+	background-position: -191px -103px;
 }
 .footer-item span:active::after {
 	background: #ffffff url(../img/spritesheet.png) no-repeat;
-	background-position: -249px -5px;
+	background-position: -246px -54px;
 }
 .icon {
 	display: inline-block;
@@ -318,13 +386,22 @@ footer {
 	background: #5496bd url("../img/spritesheet.png") no-repeat center;
 }
 .icon-twitter, .icon-twitter:hover {
-	background-position: -310px -120px;
+	background-position: -314px -130px;
 }
 .icon-facebook, .icon-facebook:hover {
-	background-position: -5px -69px;
+	background-position: -5px -89px;
 }
 .icon-YouTube, .icon-YouTube:hover {
 	background-position: -5px -5px;
+}
+.icon-twitter:active {
+	background-position: -174px -188px;	
+}
+.icon-facebook:active {
+	background-position: -61px -89px;
+}
+.icon-YouTube:active {
+	background-position: -61px -5px;
 }
 
 
