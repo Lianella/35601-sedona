@@ -104,14 +104,27 @@
         </section>
         <section class="map">            
             <form class="search-hotels" action="#">
-                <label for="user-date-race">Дата заезда</label>
-                <input id="user-date-race" type="text" name="date-race">
-                <label for="user-date-exit">Дата выезда</label>
-                <input id="user-date-exit" type="text" name="date-exit">
-                <label for="user-grown">Взрослые</label>
-                <input id="user-grown" type="text" name="grown">
-                <label for="user-children">Дети</label>
-                <input id="user-children" type="text" name="children">
+                <div class="search-date">
+                    <label class="user-date" for="user-date-race">Дата заезда:</label>
+                    <input class=" date date-race" id="user-date-race" type="text" name="date-race" size="5" value="24 апреля 2016">
+                    <a class="calendar calendar-race" href="#"></a>
+                </div>
+                <div class="search-date">
+                    <label class="user-date" for="user-date-exit">Дата выезда:</label>
+                    <input class="date date-exit" id="user-date-exit" type="text" name="date-exit" size="5"  value="4 июля 2016">
+                    <a class="calendar calendar-exit" href="#"></a>
+                </div>
+                <div class="search-people">
+                    <label class="user-people" for="user-grown">Взрослые:</label>
+                    <a class="minus minus-grown" href="#"></a>
+                    <input class="people grown" id="user-grown" type="text" name="grown" size="5" value="2">
+                    <a class="plus plus-grown" href="#"></a>
+               
+                    <label class="user-people user-children" for="user-children">Дети:</label>
+                    <a class="minus minus-children" href="#"></a>
+                    <input class="people children" id="user-children" type="text" name="children" size="5" value="0">        
+                    <a class="plus plus-children" href="#"></a>        
+                </div>
                 <input class="btn" id="user-search" type="submit" name="search" value="НАЙТИ">
             </form>
         </section>
