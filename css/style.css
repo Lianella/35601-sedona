@@ -547,14 +547,14 @@ footer {
 .quest-item label {	
 	padding-left: 40px;	
 }
-.checkbox {
+li .checkbox {
 	position: absolute;
 	opacity: 0;
 }
-.checkbox + label {
+li .checkbox + label {
   cursor: pointer;
 }
-.checkbox + label::before {
+li .checkbox + label::before {
 	content: "";    
 	position: absolute;
 	left: 0;
@@ -565,7 +565,7 @@ footer {
     background: transparent url("../img/spritesheet.png") no-repeat center;
 	background-position: -153px -57px;
 }
-.checkbox:checked + label:before {  
+li .checkbox:checked + label::before {  
 	content: "";    
 	position: absolute;
 	left: 0;
