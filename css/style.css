@@ -540,27 +540,40 @@ footer {
 	padding-top: 29px;
 	padding-bottom: 32px;
 }
-.quest-item label {
+
+.quest-item li {
 	position: relative;
-	padding-left: 20px;	
+}
+.quest-item label {	
+	padding-left: 40px;	
 }
 .checkbox {
+	position: absolute;
 	opacity: 0;
 }
-.quest-item label::before {
+.checkbox + label {
+  cursor: pointer;
+}
+.checkbox + label::before {
+	content: "";    
 	position: absolute;
 	left: 0;
-	top: -2px;
-	z-index: 10;
-	content: "";    
+	top: 50%;
+	z-index: 10;	
     height: 22px;
     width: 26px;
     background: transparent url("../img/spritesheet.png") no-repeat center;
 	background-position: -153px -57px;
 }
-.quest-item label[checked="checked"]::before {
+.checkbox:checked + label:before {  
+	content: "";    
+	position: absolute;
+	left: 0;
+	top: 50%;	
+    height: 22px;
+    width: 26px;
 	background: transparent url("../img/spritesheet.png") no-repeat center;
-	background-position: -210px -25px;
+	background-position: -210px -25px;	
 }
 .quest {
 	width: 264px;
@@ -684,8 +697,8 @@ footer {
 i {	
 	width: 20px;
 	height: 20px;
-	background: url(../img/sprite-sedona.png) no-repeat;
-	background-position: -255px -50px;
+	background: url(../img/spritesheet.png) no-repeat;
+	background-position: -314px -103px;
 }
 .hotels-ratings {
 	width: 110px;	
