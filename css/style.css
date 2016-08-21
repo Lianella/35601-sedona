@@ -13,9 +13,9 @@ body {
     text-transform: uppercase;
     /*
     background: #000000 url("../img/sedona-index-1200.jpg") no-repeat 110px 3px;
-    opacity: 0.3;
+    opacity: 0.3;*/
     /*
-    background: #000000 url("../img/sedona-hotels-1200.jpg") no-repeat -40px 3px;
+    background: #000000 url("../img/sedona-hotels-1200.jpg") no-repeat 36px 3px;
     opacity: 0.3;*/
 }
 .container {
@@ -621,26 +621,37 @@ li .checkbox:checked + label::before {
     filter: alpha(Opacity=70); /* Прозрачность в IE */
 	color: #000000;
 }
+/*----------------------Стрелки-------------------*/
 .quest-arrow {
 	width: 110px;	
+	font-size: 0;
 }
 .quest-arrow ul{	
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;	
-}/*
-.quest-arrow a:first-child {
-	width: 15px;
-	height: 15px;
-	background: url(../img/sprite-sedona.png) no-repeat;
-	background-position: -54px -5px;
+	position: relative;
 }
-.quest-arrow a:last-child {
+.quest-arrow a:first-child::before {
+	content: " ";
+	position: absolute;
 	width: 15px;
 	height: 15px;
-	background: url(../img/sprite-sedona.png) no-repeat;
-	background-position: -35px -5px;
-}*/
+	top: 50%;
+	left: 10px;
+	background: url(../img/spritesheet.png) no-repeat;
+	background-position: -180px -5px;
+}
+.quest-arrow a:last-child::before {
+	content: " ";
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: 50%;
+	left: 30px;
+	background: url(../img/spritesheet.png) no-repeat;
+	background-position: -117px -5px;
+}
 .quest-form, .hotels, .quest-sorting {  /*article с гостиницами */
 	padding-left: 72px;
 	padding-right: 72px;
@@ -652,6 +663,7 @@ li .checkbox:checked + label::before {
 }
 .hotels-image {      /*изображение отелей*/
 	width: 165px;
+	height: 90px;
 	line-height: 0; 	
 }
 /*------------------нулевые маргины---------------- */
@@ -686,7 +698,12 @@ li .checkbox:checked + label::before {
     line-height: 26px;
     font-weight: bold;
     padding-bottom: 6px;
-
+}
+.hotels-info h2:hover {
+	color: #81b3d2;
+}
+.hotels-info h2:active {
+	opacity: 0.3;
 }
 .stars {
 	display: flex;
@@ -716,14 +733,13 @@ i {
 }
 .info-link a, .info-span a {
 	font-weight: bold;
-	padding-top: 5px;	
+	padding-top: 3px;	
 	padding-left: 17px;
-	padding-right: 15px;
+	padding-right: 16px;
+	padding-bottom: 3px;
 	color: #ffffff;	
 }
-.info-span a:last-child {
-		
-	user-select: none;
+.info-span a:last-child {		
 	background-color: #81b3d2;	
 }
 .info-link a:last-child {		
@@ -741,5 +757,19 @@ i {
 	flex-direction: column;
 }
 .info-list span, .info-span span {
-	padding-bottom: 11px;
+	padding-bottom: 10px;
+}
+.info-span a:hover {
+	background-color: #669ec0;
+}
+.info-link a:hover {
+	background-color: #604e43;
+}
+.info-span a:active {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
+}
+.info-link a:active {
+	background-color: #503e33;
+	color: rgba(255, 255, 255, 0.3);
 }
