@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="body-catalog">
 <div class="container"> 
 
     <header>
@@ -23,8 +23,8 @@
                 <li class="navigation-item">
                     <a href="#">Карта штата</a>
                 </li>
-                <li class="navigation-item">
-                    <a href="catalog.html">Гостиницы</a>
+                <li class="navigation-item navigation-hotels">
+                    <a>Гостиницы</a>
                 </li>
             </ul>
         </nav>
@@ -71,11 +71,19 @@
                 </ul>
             </div>
             <div class="quest-price">
-                <h2>Стоимость в сутки (р)</h2>
-                <input id="price" type="text" name="user-price" value="от О">
-                <input id="price-2" type="text" name="user-price" value="до 3000">
-                <input type="range" multiple="3000" name="price">
-                <input type="submit" name="search" value="Показать">
+                <div class="quest-title"><h2>Стоимость в сутки (р):</h2></div>
+                <div class="quest-price-control">
+                    <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                    <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                </div>
+                <div class="quest-range">
+                    <div class="scale">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <button class="btn-quest" type="submit">Показать</button>
             </div>
         </form>
         <section class="quest-sorting">
