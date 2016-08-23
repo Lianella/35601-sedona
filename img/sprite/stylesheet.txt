@@ -55,143 +55,155 @@
 .sprite-calendar {
     width: 21px;
     height: 22px;
-    background-position: -117px -25px;
+    background-position: -243px -5px;
 }
 
 .sprite-calendar-down {
     width: 21px;
     height: 22px;
-    background-position: -148px -25px;
+    background-position: -117px -37px;
 }
 
 .sprite-calendar-hover {
     width: 21px;
     height: 22px;
-    background-position: -179px -25px;
+    background-position: -148px -37px;
 }
 
 .sprite-checkbox {
     width: 26px;
     height: 22px;
-    background-position: -210px -25px;
+    background-position: -179px -25px;
 }
 
 .sprite-checkbox-down {
     width: 26px;
     height: 22px;
-    background-position: -117px -57px;
+    background-position: -215px -37px;
+}
+
+.sprite-checkbox-hover {
+    width: 26px;
+    height: 22px;
+    background-position: -5px -69px;
 }
 
 .sprite-checkbox-zero {
     width: 22px;
     height: 22px;
-    background-position: -153px -57px;
+    background-position: -41px -69px;
 }
 
 .sprite-checkbox-zero-down {
     width: 22px;
     height: 22px;
-    background-position: -185px -57px;
+    background-position: -73px -69px;
+}
+
+.sprite-checkbox-zero-hover {
+    width: 22px;
+    height: 22px;
+    background-position: -105px -69px;
 }
 
 .sprite-facebook {
     width: 46px;
     height: 48px;
-    background-position: -5px -89px;
+    background-position: -137px -69px;
 }
 
 .sprite-facebook-down {
     width: 46px;
     height: 48px;
-    background-position: -61px -89px;
+    background-position: -193px -69px;
 }
 
 .sprite-gift {
     width: 64px;
     height: 76px;
-    background-position: -117px -89px;
+    background-position: -5px -127px;
 }
 
 .sprite-hamburger {
     width: 74px;
     height: 70px;
-    background-position: -5px -175px;
+    background-position: -79px -127px;
 }
 
 .sprite-house {
     width: 75px;
     height: 72px;
-    background-position: -89px -175px;
+    background-position: -163px -127px;
 }
 
 .sprite-htmlacademy {
     width: 113px;
     height: 39px;
-    background-position: -246px -5px;
+    background-position: -79px -209px;
 }
 
 .sprite-htmlacademy-down {
     width: 113px;
     height: 39px;
-    background-position: -246px -54px;
+    background-position: -274px -5px;
 }
 
 .sprite-htmlacademy-hover {
     width: 113px;
     height: 39px;
-    background-position: -191px -103px;
+    background-position: -251px -54px;
 }
 
 .sprite-minus {
     width: 12px;
     height: 12px;
-    background-position: -369px -5px;
+    background-position: -374px -54px;
 }
 
 .sprite-minus-down {
     width: 12px;
     height: 12px;
-    background-position: -369px -27px;
+    background-position: -374px -76px;
 }
 
 .sprite-minus-hover {
     width: 12px;
     height: 12px;
-    background-position: -369px -49px;
+    background-position: -374px -98px;
 }
 
 .sprite-plus {
     width: 11px;
     height: 11px;
-    background-position: -217px -71px;
+    background-position: -249px -120px;
 }
 
 .sprite-plus-down {
     width: 11px;
     height: 11px;
-    background-position: -369px -71px;
+    background-position: -270px -120px;
 }
 
 .sprite-plus-hover {
     width: 11px;
     height: 11px;
-    background-position: -369px -92px;
+    background-position: -291px -120px;
 }
 
 .sprite-stars {
     width: 18px;
     height: 17px;
-    background-position: -314px -103px;
+    background-position: -312px -103px;
 }
 
 .sprite-twitter {
     width: 46px;
     height: 48px;
-    background-position: -314px -130px;
+    background-position: -340px -120px;
 }
 
 .sprite-twitter-down {
     width: 46px;
     height: 48px;
-    background-position: -174px -188px;
+    background-position: -248px -178px;
 }

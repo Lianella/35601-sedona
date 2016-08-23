@@ -10,20 +10,21 @@ body {
     line-height: 21px;
     color: #000000;
     background-color: #ffffff;
-    text-transform: uppercase;
-    /*
-    background: #000000 url("../img/sedona-index-1200.jpg") no-repeat 110px 3px;
-    opacity: 0.3;*/
-    
+    text-transform: uppercase;      
+
+   /* background: #000000 url("../img/sedona-index-1200.jpg") no-repeat 110px 3px;
+    opacity: 0.3;*/   
 }
 .body-catalog {
-    background-color: #fefefe;
-   /*background: transparent url("../img/sedona-hotels-1200.jpg") no-repeat 36px 3px;
+    background-color: #f0f0f0;
+  /* background: transparent url("../img/sedona-hotels-1200.jpg") no-repeat 36px 3px;
     opacity: 0.2;*/
 }
 .container {
 	width: 1200px;
 	margin: 0 auto;
+	box-shadow: 5px 0 15px rgba(0, 1, 1, 0.2),
+			   -5px 0 15px rgba(0, 1, 1, 0.2);
 }
 h2 {
 	font-size: 21px;    
@@ -55,6 +56,7 @@ p {
 .navigation {
 	padding-top: 16px;
 	padding-bottom: 16px;
+	background-color: #ffffff;
 }
 .navigation-list {
 	display: flex;
@@ -119,7 +121,8 @@ ul {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-image: url(../img/background-photo.jpg);
+	z-index: 10;
+	background: #e5f2fa url(../img/background-photo.jpg);
 	padding-top: 76px;
 	
 }
@@ -233,6 +236,7 @@ ul {
 	padding-left: ;
 	padding-right: ;
 }
+/*---------------Изображения дома, гамбургера и сувениров--------------*/
 .internals-item h2::after {
 	content: " ";
 	position: absolute;
@@ -243,33 +247,15 @@ ul {
 	background: transparent url(../img/spritesheet.png) no-repeat;	
 }
 .internals-item:first-child h2::after {
-	background-position: -89px -171px;
+	background-position: -163px -127px;
 }
 .internals-item:nth-child(2) h2::after {
-	background-position: -5px -171px;
+	background-position: -79px -127px;
 }
 .internals-item:last-child h2::after {
 	width: 64px;
 	height: 76px;
-	background-position: -117px -89px;
-}
-.internals-item .house {
-	width: 75px;
-	height: 77px;
-	background: url(../img/sprite-sedona.png) no-repeat;
-	background-position: -78px -115px;
-}
-.internals-item .food {
-	width: 75px;
-	height: 75px;
-	background: url(../img/sprite-sedona.png) no-repeat;
-	background-position: -78px -36px;
-}
-.internals-item .souvenirs {
-	width: 75px;
-	height: 79px;
-	background: url(../img/sprite-sedona.png) no-repeat;
-	background-position: 0px -36px;
+	background-position: -5px -127px;
 }
 /*-------------Заинтересовались?------------------*/
 .interested {
@@ -382,17 +368,17 @@ ul {
 	width: 21px;
 	height: 22px;
 	background: transparent url(../img/spritesheet.png) no-repeat;
-	background-position: -117px -25px;
+	background-position: -243px -5px;
 	top: 12.5%;	
 	right: 10px;
 }
 .calendar:hover {
 	background: transparent url(../img/spritesheet.png) no-repeat;
-	background-position: -179px -25px;
+	background-position: -148px -37px;
 }
 .calendar:active {
 	background: transparent url(../img/spritesheet.png) no-repeat;
-	background-position: -148px -25px;
+	background-position: -117px -37px;
 }
 .search-people {
 	position: relative;
@@ -426,16 +412,16 @@ ul {
 	width: 12px;
 	height: 12px;
 	background: transparent url(../img/spritesheet.png) no-repeat;
-	background-position: -369px -5px;
+	background-position: -374px -54px;
 	top: 13px;		
 }
 .minus:hover {
 	background: transparent url(../img/spritesheet.png) no-repeat;
-	background-position: -369px -49px;
+	background-position: -374px -98px;
 }
 .minus:active {
 	background: transparent url(../img/spritesheet.png) no-repeat;
-	background-position: -369px -27px;
+	background-position: -374px -76px;
 }
 .minus-grown {
 	left: 126px;
@@ -449,16 +435,16 @@ ul {
 	width: 11px;
 	height: 11px;
 	background: transparent url(../img/spritesheet.png) no-repeat;
-	background-position: -217px -71px;
+	background-position: -249px -120px;
 	top: 13.5px;
 }
 .plus:hover {
 	background: transparent url(../img/spritesheet.png) no-repeat;
-	background-position: -369px -92px;
+	background-position: -291px -120px;
 }
 .plus:active {
 	background: transparent url(../img/spritesheet.png) no-repeat;
-	background-position: -369px -71px;
+	background-position: -270px -120px;
 }
 .plus-grown {
 	left: 196px;
@@ -473,7 +459,7 @@ footer {
 	justify-content: center;
 	align-content: space-around;
 	align-items: center;
-	background: rgba(255,255,255, 0,8);
+	background: rgba(255,255,255, 0.8);
 	padding-top: 38px;
 	padding-bottom: 38px;
 }
@@ -506,17 +492,17 @@ footer {
 	width: 115px;
 	height: 40px;
 	background: #ffffff url(../img/spritesheet.png) no-repeat;
-	background-position: -246px -5px;
+	background-position: -79px -209px;
 	top: -50%;	
 	right: 10px;
 }
 .footer-item span:hover::after {
 	background: #ffffff url(../img/spritesheet.png) no-repeat;
-	background-position: -191px -103px;
+	background-position: -251px -54px;
 }
 .footer-item span:active::after {
 	background: #ffffff url(../img/spritesheet.png) no-repeat;
-	background-position: -246px -54px;
+	background-position: -274px -5px;
 }
 .icon {
 	display: inline-block;
@@ -535,19 +521,19 @@ footer {
 	background: #5496bd url("../img/spritesheet.png") no-repeat center;
 }
 .icon-twitter, .icon-twitter:hover {
-	background-position: -314px -130px;
+	background-position: -340px -120px;
 }
 .icon-facebook, .icon-facebook:hover {
-	background-position: -5px -89px;
+	background-position: -137px -69px;
 }
 .icon-YouTube, .icon-YouTube:hover {
 	background-position: -5px -5px;
 }
 .icon-twitter:active {
-	background-position: -174px -188px;	
+	background-position: -248px -178px;
 }
 .icon-facebook:active {
-	background-position: -61px -89px;
+	background-position: -193px -69px;
 }
 .icon-YouTube:active {
 	background-position: -61px -5px;
@@ -587,7 +573,7 @@ li .checkbox + label::before {
     height: 22px;
     width: 26px;
     background: transparent url("../img/spritesheet.png") no-repeat center;
-	background-position: -153px -57px;
+	background-position: -41px -69px;
 }
 li .checkbox:checked + label::before {  
 	content: "";    
@@ -597,7 +583,23 @@ li .checkbox:checked + label::before {
     height: 22px;
     width: 26px;
 	background: transparent url("../img/spritesheet.png") no-repeat center;
-	background-position: -210px -25px;	
+	background-position: -179px -25px;	
+}
+li .checkbox:checked:hover + label::before {
+	background: transparent url("../img/spritesheet.png") no-repeat center;
+	background-position: -5px -69px;
+}
+li .checkbox:checked:active + label::before {
+	background: transparent url("../img/spritesheet.png") no-repeat center;
+	background-position: -215px -37px;
+}
+li .checkbox:hover + label::before {
+	background: transparent url("../img/spritesheet.png") no-repeat center;
+	background-position: -105px -69px;
+}
+li .checkbox:active + label::before {
+	background: transparent url("../img/spritesheet.png") no-repeat center;
+	background-position: -73px -69px;
 }
 .quest {
 	width: 264px;
@@ -667,11 +669,12 @@ li .checkbox:checked + label::before {
 }
 .range-toggle {
 	position: absolute;
+	z-index: 10;
   	top: -9px;
   	width: 4px;
   	height: 4px;
-  	background: #ababab;
-  	border: 10px solid #ffffff;
+  	background-color: #ababab;
+  	border: 8px solid #ffffff;
   	border-radius: 50%;
   	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   	cursor: pointer;
@@ -735,8 +738,23 @@ li .checkbox:checked + label::before {
 .quest-picking li a {
 	color: #000000;
 	opacity: 0.3;
-	border-bottom: 2px #81b3d2 dashed;
+	border-bottom: 2px #81b3d2 dotted;
 	margin-left: 33px;
+}
+.quest-picking li a:hover {
+	color: #81b3d2;
+	opacity: 1;
+}
+.quest-picking li a:active {
+	color: #000000;
+	opacity: 1;
+	border-bottom: none;
+}
+.quest-picking li .active {
+	color: #81b3d2;
+	opacity: 1;
+	border-bottom: none;
+	cursor: pointer;
 }
 .quest-picking li span {
 	padding-right: 7px;
@@ -785,7 +803,35 @@ li .checkbox:checked + label::before {
 	background: url(../img/spritesheet.png) no-repeat;
 	background-position: -117px -5px;
 }
-.quest-form, .hotels, .quest-sorting {  /*article с гостиницами */
+.quest-arrow li:first-child a:hover::before {
+	background: url(../img/spritesheet.png) no-repeat;
+	background-position: -222px -5px;
+}
+.quest-arrow li:last-child a:hover::before {
+	background: url(../img/spritesheet.png) no-repeat;
+	background-position: -159px -5px;
+}
+.quest-arrow li:first-child a:active::before {
+	background: url(../img/spritesheet.png) no-repeat;
+	background-position: -201px -5px;
+}
+.quest-arrow li:last-child a:active::before {
+	background: url(../img/spritesheet.png) no-repeat;
+	background-position: -138px -5px;
+}
+.quest-arrow li .activ::before {
+	content: " ";
+	position: absolute;
+	width: 10px;
+	height: 15px;
+	top: 50%;
+	right: 0px;
+	background: url(../img/spritesheet.png) no-repeat;
+	background-position: -138px -5px;
+}
+
+ /*--------------article с гостиницами------------------------ */
+.quest-form, .hotels, .quest-sorting { 
 	padding-left: 72px;
 	padding-right: 72px;
 	background-color: #fefefe;
@@ -793,6 +839,10 @@ li .checkbox:checked + label::before {
 .hotels {
 	padding-top: 31px;
 	padding-bottom: 30px;
+	border-top: 2px #cccccc solid;
+}
+.hotels:last-child {
+	border-bottom: 3px #cccccc solid;
 }
 .hotels-image {      /*изображение отелей*/
 	width: 165px;
