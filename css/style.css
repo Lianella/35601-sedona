@@ -302,6 +302,9 @@ ul {
 	margin-bottom: 80px;
 	background-color: #ffffff;
 	padding: 55px;	
+	box-shadow: 7px 0 15px rgba(0, 1, 1, 0.15),
+			   -7px 0 15px rgba(0, 1, 1, 0.15),
+			    0px -7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .search-hotels .btn {
