@@ -61,7 +61,9 @@ p {
 .navigation-list {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-around;	
+	flex-wrap: wrap;  /*для переполнения меню*/
+
 }
 li {	
     list-style-type: none;
@@ -823,7 +825,7 @@ li .checkbox:disabled + label::before {
 	background: url(../img/spritesheet.png) no-repeat;
 	background-position: -138px -5px;
 }
-.quest-arrow li .activ::before {
+.quest-arrow li:last-child .activ::before {
 	content: " ";
 	position: absolute;
 	width: 10px;
@@ -832,12 +834,13 @@ li .checkbox:disabled + label::before {
 	right: 0px;
 	background: url(../img/spritesheet.png) no-repeat;
 	background-position: -138px -5px;
+	cursor: pointer;
 }
-.quest-arrow li .activ:hover::before {
+.quest-arrow li:last-child .activ:hover::before {
 	background: url(../img/spritesheet.png) no-repeat;
 	background-position: -138px -5px;
 }
-.quest-arrow li .activ:active::before {
+.quest-arrow li:last-child .activ:active::before {
 	background: url(../img/spritesheet.png) no-repeat;
 	background-position: -138px -5px;
 }
