@@ -59,10 +59,17 @@ p {
 	background-color: #ffffff;
 }
 .navigation-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;	
-	flex-wrap: wrap;  /*для переполнения меню*/
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;	
+	-ms-flex-wrap: wrap;	
+	    flex-wrap: wrap;  /*для переполнения меню*/
 
 }
 li {	
@@ -135,9 +142,16 @@ header {
 
 /*-----------------Изображение с приветствием------------------*/
 .title {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	z-index: 10;
 	background: #e5f2fa url(../img/background-photo.jpg);
 	padding-top: 76px;
@@ -146,37 +160,55 @@ header {
 .title img:first-child {	
 	width: 458px;
 	height: 352;
-	align-self: center;
+	-ms-flex-item-align: center;
+	    align-self: center;
 	padding-bottom: 23px;
 }
 .title img:last-child {	
 	width: 1200px;
 	height: 57px;
 	height: auto;
-	align-self: center;
+	-ms-flex-item-align: center;
+	    align-self: center;
 }
 .description {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	padding-top: 60px;
 	padding-bottom: 57px;
 }
 .description h2 {
-	align-self: center;	
+	-ms-flex-item-align: center;
+	    align-self: center;	
 	padding-right: 300px;
 	padding-left: 300px;
 	text-align: center;
 }
 .description p {
 	padding-top: 32px;
-	align-self: center;
+	-ms-flex-item-align: center;
+	    align-self: center;
 }
 /* ----------Причины посетить Седону---------------------*/
 .reasons {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .reasons-blue {
 	background-color: #81b3d2;
@@ -189,12 +221,21 @@ header {
 	background-color: #eeeeee;
 }
 .reasons-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	text-align: center;		
 	width: 400px;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	padding-left: 50px;
@@ -214,7 +255,8 @@ header {
 .reasons-image {
 	width: 800px;
 	height: 256px;
-	align-self: center;
+	-ms-flex-item-align: center;
+	    align-self: center;
 	line-height: 0; 
 }
 /*.reasons-blue .reasons-item {
@@ -230,19 +272,35 @@ header {
 }
 /*---------------Жилье, Еда, Сувениры ---------------------*/
 .internals-white {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	padding-top: 53px;
 	padding-bottom: 75px;
 }
 .internals-item {
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	width: 400px;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	text-align: center;	
 	padding-left: 50px;
 	padding-right: 50px;
@@ -276,10 +334,19 @@ header {
 }
 /*-------------Заинтересовались?------------------*/
 .interested {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	text-align: center;
 	padding-left: 312px;
 	padding-right: 312px;	
@@ -307,10 +374,19 @@ header {
     font-weight: bold;
 }
 .map {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	background-image: url(../img/search-maps.jpg);
 }
 /*--------------------------Форма на главной------------------*/
@@ -474,25 +550,43 @@ header {
 }
 /*-------------------Подвал-----------------*/
 footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-content: space-around;
-	align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-line-pack: distribute;
+	    align-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	background: rgba(255,255,255, 0.8);
 	padding-top: 38px;
 	padding-bottom: 38px;
 }
 .footer-item {
 	width: 400px;
-	align-self: center;
+	-ms-flex-item-align: center;
+	    align-self: center;
 	text-align: center;
 
 }
 .footer-item ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .footer-item:first-child a {
 	font-size: 21px;
@@ -562,9 +656,16 @@ footer {
 
 /*   -------------Страница catolog.html-------------------------- */
 .quest-form {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	background-image: url(../img/filter-background.jpg);
 	color: #ffffff;
 	padding-top: 29px;
@@ -674,7 +775,8 @@ li .checkbox:disabled + label::before {
   	width: 2px;
   	height: 22px;
   	background: #ffffff;
-  	transform: translate(-50%, -50%);
+  	-webkit-transform: translate(-50%, -50%);
+  	        transform: translate(-50%, -50%);
 }
 .quest-range {
   	position: relative;
@@ -744,19 +846,34 @@ li .checkbox:disabled + label::before {
     color: #ffffff;	
 }
 .quest-sorting, .hotels { /*section и article после формы*/
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;	
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;	
 }
 .quest-sorting {   /*Сортировка по типу рейтингу*/
-	align-items: flex-end;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	            -ms-grid-row-align: flex-end;
+	        align-items: flex-end;
 	background-color: #fefefe;
 	padding-top: 31px;
 	padding-bottom: 34px;
 }
 .quest-picking { /* ul в quest-sorting*/
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .quest-picking li a {
 	color: #000000;
@@ -801,9 +918,16 @@ li .checkbox:disabled + label::before {
 	font-size: 0;
 }
 .quest-arrow ul{	
+	display: -webkit-box;	
+	display: -ms-flexbox;	
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;	
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;	
 	position: relative;
 }
 .quest-arrow li:first-child a::before {
@@ -905,8 +1029,13 @@ li .checkbox:disabled + label::before {
 }	
 .hotels-info {
 	width: 781px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 .hotels-info h2 {
 	font-size: 21px;    
@@ -921,9 +1050,16 @@ li .checkbox:disabled + label::before {
 	opacity: 0.3;
 }
 .stars {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 	padding-bottom: 39px;
 }
 i {	
@@ -964,12 +1100,22 @@ i {
 	margin-right: 6px;
 }
 .info-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
 .info-span, .info-link {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 .info-list span, .info-span span {
 	padding-bottom: 10px;
