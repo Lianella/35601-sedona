@@ -321,7 +321,7 @@ header {
 	background-position: -5px -127px;
 }
 /*-------------Заинтересовались?------------------*/
-.interested {
+.interested {	
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -366,6 +366,7 @@ header {
     font-weight: bold;
 }
 .map {
+	height: 593px;	
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -383,6 +384,7 @@ header {
 }
 /*--------------------------Форма на главной------------------*/
 .search-hotels {	
+	/*display: none;*/  /*для скрытия формы*/
 	width: 570px;	
 	margin-bottom: 80px;
 	background-color: #ffffff;
@@ -553,6 +555,8 @@ header {
 }
 /*-------------------Подвал-----------------*/
 footer {
+	position: absolute; /* для наезда на карту*/
+	bottom: -2078px; /* для наезда на карту*/
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
