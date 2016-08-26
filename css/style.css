@@ -76,6 +76,9 @@ ul {
 	padding-left: 0;
 }
 /*-----------------Навигационное меню---------------- */
+header {
+	position: relative;
+}
 .navigation-list a {    
     font-size: 14px;
     line-height: 26px;
@@ -100,13 +103,13 @@ ul {
 .navigation-list li:nth-child(4n+1) {  
 	padding-left:72px;  	
 }
-/*------------для переполнения------------*
-.navigation-list li:last-child {    
-	padding-right:72px;
-}
 .navigation-list li:nth-child(3), .navigation-list li:last-child {
 	padding-right:72px;
 	text-align: right;
+}
+/*------------для переполнения------------*/
+.navigation-list li:last-child {    
+	padding-right:72px;
 }
 .navigation-item a:hover {
 	color: #81b3d2;
