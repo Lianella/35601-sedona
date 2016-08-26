@@ -92,6 +92,15 @@ ul {
 	padding-left:72px;  
 	margin-right:240px;
 }
+/*---------для переполнения -----------------*/
+.navigation-list li:nth-child(4n+2) {  
+	padding-left:72px;  
+	margin-right:240px;
+}
+.navigation-list li:nth-child(4n+1) {  
+	padding-left:72px;  	
+}
+/*------------для переполнения------------*
 .navigation-list li:last-child {    
 	padding-right:72px;
 }
@@ -555,19 +564,23 @@ footer {
 	padding-top: 29px;
 	padding-bottom: 32px;
 }
-
-.quest-item li {
-	position: relative;
+.quest {
+	width: 264px;
 }
-.quest-item label {	
+.quest-item li {
+	position: relative;	
 	padding-left: 40px;	
 }
+/*.quest-item li label {	
+	padding-left: 40px;		
+}*/
 li .checkbox {
 	position: absolute;
-	opacity: 0;
+	opacity: 0;	
 }
 li .checkbox + label {
   cursor: pointer;
+
 }
 li .checkbox + label::before {
 	content: "";    
@@ -607,9 +620,7 @@ li .checkbox:disabled + label::before {
 	background-position: -73px -69px;
 }
 
-.quest {
-	width: 264px;
-}
+
 /*--------------------Сложная форма на странице гостиниц-------------------*/
 .quest-price {
 	width: 528px;
