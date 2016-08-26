@@ -88,15 +88,17 @@ header {
 .navigation-list li {    
 	width: 240px;
 }
-.navigation-list li:first-child {    
-	padding-left:72px;
+.navigation-list li:first-child {   
+	text-align: left; 	
 }
-.navigation-list li:nth-child(2) {  
-	padding-left:72px;  
+.navigation-list li:nth-child(2) { 
+	text-align: left;  
 	margin-right:240px;
 }
-.navigation-list li:nth-child(3), .navigation-list li:last-child {
-	/*padding-right:72px;*/
+.navigation-list li:nth-child(3) {
+	text-align: center;
+}
+.navigation-list li:last-child  {
 	text-align: right;
 }
 /*---------для переполнения -----------------*/
