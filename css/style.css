@@ -902,8 +902,7 @@ li .checkbox:disabled + label::before {
 	padding-right: 7px;
 }
 .quest-text {  /* Найдено: 3 */
-	width: 165px;
-	
+	width: 165px;	
 }
 .quest-list {  /* контейнер Сортировка по типу рейтингу*/
 	width: 781px;	
