@@ -89,38 +89,22 @@ header {
 .navigation-list a {    
     font-size: 14px;
     line-height: 26px;
-    font-weight: bold;
-    
+    font-weight: bold;    
 } 
 .navigation-list li {    
 	width: 240px;
 }
-.navigation-list li:first-child {   
-	text-align: left; 	
+.navigation-list li {   
+	text-align: center; 	
 }
-.navigation-list li:nth-child(2) { 
-	text-align: left;  
+.navigation-list li:nth-child(2) { 	
 	margin-right:240px;
-}
-.navigation-list li:nth-child(3) {
-	text-align: center;
-}
-.navigation-list li:last-child  {
-	text-align: right;
 }
 /*---------для переполнения -----------------*/
 .navigation-list li:nth-child(4n+2) {  
-	padding-left:72px;  
 	margin-right:240px;
 }
-.navigation-list li:nth-child(4n+1) {  
-	padding-left:72px;  	
-}
-
 /*------------для переполнения------------*/
-.navigation-list li:last-child {    
-	padding-right:72px;
-}
 .navigation-item a:hover {
 	color: #81b3d2;
 }
