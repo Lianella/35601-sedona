@@ -322,6 +322,7 @@ header {
 }
 /*-------------Заинтересовались?------------------*/
 .interested {	
+	position: relative; /*для привязки футера*/
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -385,7 +386,7 @@ header {
 /*--------------------------Форма на главной------------------*/
 .search-hotels {	
 	/*display: none;*/  /*для скрытия формы*/
-	width: 570px;	
+	width: 570px;
 	margin-bottom: 80px;
 	background-color: #ffffff;
 	padding: 55px;	
