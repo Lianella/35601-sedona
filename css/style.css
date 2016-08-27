@@ -387,7 +387,7 @@ header {
 .search-hotels {	
 	/*display: none;*/  /*для скрытия формы*/
 	width: 570px;
-	margin-bottom: 80px;
+	margin-top: -200px;	
 	background-color: #ffffff;
 	padding: 55px;	
 	box-shadow: 7px 0 15px rgba(0, 1, 1, 0.15),
@@ -555,9 +555,7 @@ header {
 	right: 19px;
 }
 /*-------------------Подвал-----------------*/
-footer {
-	position: absolute; /* для наезда на карту*/
-	bottom: -2078px; /* для наезда на карту*/
+footer {	
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -573,9 +571,14 @@ footer {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	background: rgba(255,255,255, 0.8);
+	background: #ffffff;
 	padding-top: 38px;
-	padding-bottom: 38px;
+	padding-bottom: 31px;
+}
+.footer-index {
+	position: absolute; /* для наезда на карту*/
+	background: rgba(255,255,255, 0.8);
+	margin-top: -120px; /* для наезда на карту*/
 }
 .footer-item {
 	width: 400px;
@@ -595,6 +598,7 @@ footer {
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
+	flex-wrap: wrap;
 }
 .footer-item:first-child a {
 	font-size: 21px;
@@ -630,7 +634,7 @@ footer {
 	display: inline-block;
   	width: 46px;
   	height: 48px;
-  	margin: 0 3px;
+  	margin: 0 3px 3px;
   	font-size: 0;
   	vertical-align: top;
   	text-decoration: none;
@@ -1090,12 +1094,19 @@ i {
 	line-height: 21px;
 }
 .info-link a, .info-span a {
+
 	font-weight: bold;
 	padding-top: 3px;	
 	padding-left: 17px;
 	padding-right: 16px;
 	padding-bottom: 3px;
 	color: #ffffff;	
+}
+.info-span a {
+	width: 110px;
+}
+.info-link a {
+	width: 140px;
 }
 .info-span a:last-child {		
 	background-color: #81b3d2;	
@@ -1104,7 +1115,7 @@ i {
 	background-color: #766357;
 }
 .info-span {
-	margin-right: 6px;
+	margin-right: 6px;	
 }
 .info-list {
 	display: -webkit-box;
@@ -1115,7 +1126,8 @@ i {
 	    -ms-flex-direction: row;
 	        flex-direction: row;
 }
-.info-span, .info-link {
+.info-span, .info-link {	
+	flex-wrap: wrap;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
