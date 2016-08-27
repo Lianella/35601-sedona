@@ -3,10 +3,15 @@
 	src: url('../fonts/ptsans.woff2') format('woff2'),
 	url('../fonts/ptsans.woff') format('woff');
 }
+@font-face {
+	font-family: 'PTSansBold';
+	src: url('../fonts/ptsansbold.woff2') format('woff2'),
+	url('../fonts/ptsansbold.woff') format('woff');
+}
 *{box-sizing:border-box;}
 body {	
 	font-size: 14px;
-    font-family: "PTSans",Arial,sans-serif;
+    font-family: "PTSans", Arial, sans-serif;
     line-height: 21px;
     color: #000000;
     background-color: #f2f2f2;
@@ -30,6 +35,7 @@ h2 {
 	width: 100%;
 	font-size: 21px;    
     line-height: 21px;
+    font-family: "PTSansBold", Arial, sans-serif;
     color: #000000;
 }
 h3 {
@@ -57,7 +63,7 @@ p {
 	margin-left: -69px;	
 }
 .navigation {
-	padding-top: 16px;
+	padding-top: 14px;
 	padding-bottom: 16px;
 	background-color: #ffffff;
 }
@@ -169,7 +175,7 @@ header {
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	padding-top: 58px;
+	padding-top: 60px;
 	padding-bottom: 51px;
 	padding-left: 350px;
 	padding-right: 350px;
@@ -669,8 +675,6 @@ footer {
 .icon-YouTube:active {
 	background-position: -61px -5px;
 }
-
-
 /*   -------------Страница catolog.html-------------------------- */
 .quest-form {
 	display: -webkit-box;
@@ -685,26 +689,24 @@ footer {
 	        justify-content: center;
 	background-image: url(../img/filter-background.jpg);
 	color: #ffffff;
-	padding-top: 29px;
-	padding-bottom: 32px;
+	padding: 27px 72px 31px;	
 }
 .quest {
-	width: 264px;
+	width: 254px;
+}
+.quest:last-child {
+	margin-left: -44px;
 }
 .quest-item li {
 	position: relative;	
 	padding-left: 40px;	
 }
-/*.quest-item li label {	
-	padding-left: 40px;		
-}*/
 li .checkbox {
 	position: absolute;
 	opacity: 0;	
 }
 li .checkbox + label {
   cursor: pointer;
-
 }
 li .checkbox + label::before {
 	content: "";    
@@ -743,13 +745,11 @@ li .checkbox:disabled + label::before {
 	background: transparent url("../img/spritesheet.png") no-repeat center;
 	background-position: -73px -69px;
 }
-
-
 /*--------------------Сложная форма на странице гостиниц-------------------*/
 .quest-price {
-	width: 528px;
+	width: 548px;
 	text-transform: uppercase;
-	padding-left: 200px;
+	padding-left: 220px;
 }
 .quest-title {
 	margin-bottom: 9px;
@@ -766,15 +766,13 @@ li .checkbox:disabled + label::before {
 .quest-price-control label {
   	display: inline-block;
   	font-size: 14px;
-  	line-height: 28px;  	
-  	vertical-align: top;
+  	line-height: 28px;   		
   	cursor: pointer;
 }
 .quest-price-control .min-price,
 .quest-price-control .max-price {
   	width: 150px;
   	line-height: 28px;
-  	/*vertical-align: middle;*/
   	padding-left: 63px;  	
 }
 .quest-price-control input {
@@ -815,8 +813,8 @@ li .checkbox:disabled + label::before {
 	position: absolute;
 	z-index: 10;
   	top: -9px;
-  	width: 4px;
-  	height: 4px;
+  	width: 20px;
+	height: 20px;
   	border: 8px solid #ffffff;
   	border-radius: 50%;
   	background: #ababab;
@@ -826,7 +824,6 @@ li .checkbox:disabled + label::before {
 .range-toggle-min {
   	left: 0;
 }
-
 .range-toggle-max {
   	left: 80%;
 }
@@ -852,13 +849,10 @@ li .checkbox:disabled + label::before {
   	background: #ffffff;
 }
 .quest-item li {
-	padding-top: 24px;
-}	/*интервал между списками в форме
-}
-.quest-item li:first-child {
-	padding-top: 0;	/*интервал между списками в форме
-}*/
-.quest h2, .quest-price h2 { /* Инфраструктура, Тип жилья, стоимость в сутки*/
+	padding-top: 25px;
+}	/*интервал между списками в форме*/
+/* -------Инфраструктура, Тип жилья, стоимость в сутки--------------*/
+.quest h2, .quest-price h2 { 
 	font-size: 16px;    
     line-height: 21px;
     color: #ffffff;	
@@ -1011,40 +1005,20 @@ li .checkbox:disabled + label::before {
 	background-color: #fefefe;
 }
 .hotels {
-	padding-top: 31px;
-	padding-bottom: 30px;
+	padding-top: 27px;
+	padding-bottom: 29px;
 	border-top: 1px #e5e5e5 solid;
 }
 .hotels:last-child {
 	border-bottom: 1px #e5e5e5 solid;
 }
 .hotels-image {      /*изображение отелей*/
+	padding-top: 3px;
 	width: 165px;
 	height: 90px;
 	line-height: 0; 	
 }
-/*------------------нулевые маргины---------------- */
-.navigation-list, 
-.description h2, 
-.description p, 
-.reasons-item h2,
-.reasons-item p,
-.internals-item h2,
-.internals-item p,
-.interested h3,
-.interested p,
-.quest h2, 
-.quest-price h2, 
-.quest-item, 
-.quest-picking, 
-.quest-text h2, 
-.quest-arrow ul, 
-.hotels-image, 
-.hotels-info h2,
-.footer-item ul {
-	margin-top: 0;
-	margin-bottom: 0;
-}	
+
 .hotels-info {
 	width: 781px;
 	display: -webkit-box;
@@ -1057,9 +1031,9 @@ li .checkbox:disabled + label::before {
 }
 .hotels-info h2 {
 	font-size: 21px;    
-    line-height: 26px;
+    line-height: 21px;
     font-weight: bold;
-    padding-bottom: 6px;
+    padding-bottom: 11px;
 }
 .hotels-info h2:hover {
 	color: #81b3d2;
@@ -1078,13 +1052,15 @@ li .checkbox:disabled + label::before {
 	-webkit-box-pack: end;
 	    -ms-flex-pack: end;
 	        justify-content: flex-end;
-	padding-bottom: 39px;
+	padding-bottom: 46px;
+	
 }
 i {	
 	width: 20px;
 	height: 20px;
+	margin-left: 4px;	
 	background: url(../img/spritesheet.png) no-repeat;
-	background-position: -314px -103px;
+	background-position: -310px -101px;
 }
 .hotels-ratings {
 	width: 110px;	
@@ -1144,7 +1120,7 @@ i {
 	        flex-direction: column;
 }
 .info-list span, .info-span span {
-	padding-bottom: 10px;
+	padding-bottom: 13px;
 }
 .info-span a:hover {
 	background-color: #669ec0;
@@ -1160,3 +1136,25 @@ i {
 	background-color: #503e33;
 	color: rgba(255, 255, 255, 0.3);
 }
+/*------------------нулевые маргины---------------- */
+.navigation-list, 
+.description h2, 
+.description p, 
+.reasons-item h2,
+.reasons-item p,
+.internals-item h2,
+.internals-item p,
+.interested h3,
+.interested p,
+.quest h2, 
+.quest-price h2, 
+.quest-item, 
+.quest-picking, 
+.quest-text h2, 
+.quest-arrow ul, 
+.hotels-image, 
+.hotels-info h2,
+.footer-item ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}	
