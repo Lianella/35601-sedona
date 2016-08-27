@@ -149,7 +149,7 @@ header {
 	height: 352px;
 	-ms-flex-item-align: center;
 	    align-self: center;
-	padding-bottom: 23px;
+	margin-bottom: 23px;
 }
 .title img:last-child {	
 	width: 1200px;
@@ -169,8 +169,8 @@ header {
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	padding-top: 60px;
-	padding-bottom: 57px;
+	padding-top: 58px;
+	padding-bottom: 51px;
 	padding-left: 350px;
 	padding-right: 350px;
 	background: #ffffff;
@@ -179,9 +179,10 @@ header {
 	-ms-flex-item-align: center;
 	    align-self: center;		
 	text-align: center;
+	line-height: 26px;
 }
 .description p {	
-	padding-top: 32px;
+	padding-top: 27px;
 	-ms-flex-item-align: center;
 	    align-self: center;		
 }
@@ -230,7 +231,7 @@ header {
 	padding-right: 45px;	
 }
 .reasons-item span {	
-	padding-top: 21px;
+	padding-top: 23px;
 	padding-bottom: 21px;
 }
 .reasons-item h2 {	
@@ -267,7 +268,7 @@ header {
 	    -ms-flex-pack: center;
 	        justify-content: center;
 	padding-top: 53px;
-	padding-bottom: 85px;
+	padding-bottom: 81px;
 	background: #ffffff;
 }
 .internals-item {
@@ -291,10 +292,8 @@ header {
 	padding-right: 50px;
 }
 .internals-item h2 {
-	padding-top: 102px;
-	padding-bottom: 27px;
-	padding-left: ;
-	padding-right: ;
+	padding-top: 107px;
+	padding-bottom: 26px;	
 }
 .internals-item p {
 	line-height: 21px;
@@ -303,8 +302,8 @@ header {
 .internals-item h2::after {
 	content: " ";
 	position: absolute;
-	top: 0px;
-	left: 164px;
+	top: 5px;
+	left: 163px;
 	width: 75px;
 	height: 76px;
 	background: transparent url(../img/spritesheet.png) no-repeat;	
@@ -343,12 +342,13 @@ header {
 	background: #ffffff;
 }
 .interested h3 {
-	padding-bottom: 35px;
+	padding-bottom: 29px;
 }
 .interested p {
-	padding-bottom: 40px;
+	padding-bottom: 46px;
 	padding-left: 80px;
 	padding-right: 80px;
+	line-height: 24px;
 }
 .interested a {
 	width: 571px;	
@@ -427,9 +427,9 @@ header {
 	position: relative;
 	width: 457px;	
 	padding-bottom: 30px;	
+	white-space: nowrap;
 }
-.date {
-	position: absolute;
+.date {	
 	z-index: 5;
 	width: 346px;
 	height: 38px;
@@ -441,8 +441,8 @@ header {
     background-color: #f2f2f2;    
     border: 0;
     outline: none;
+    margin-left: 20px;
     padding-left: 15px;
-    left: 110px;
 }
 .date:hover {
 	z-index: 5;
@@ -480,9 +480,9 @@ header {
 }
 .search-people {
 	position: relative;
+	white-space: nowrap;
 }
 .people {
-	position: absolute;
 	z-index: 1;
 	width: 114px;
 	height: 38px;
@@ -496,13 +496,13 @@ header {
     text-align:center;    
 }
 .grown {
-	left: 110px;
-}
-.children {
-	left: 342px;
+	margin-left: 40px;	
 }
 .user-children {
-	padding-left: 209px;
+	margin-left: 45px;	
+}
+.children {
+	margin-left: 27px;/*left: 342px;*/
 }
 .minus {
 	position: absolute;
@@ -524,7 +524,7 @@ header {
 	background-position: -374px -76px;
 }
 .minus-grown {
-	left: 126px;
+	left: 128px;
 }
 .minus-children{
 	right: 89px;
@@ -549,10 +549,10 @@ header {
 	background-position: -270px -120px;
 }
 .plus-grown {
-	left: 196px;
+	left: 201px;
 }
 .plus-children{
-	right: 19px;
+	right: 15px;
 }
 /*-------------------Подвал-----------------*/
 footer {	
@@ -604,6 +604,11 @@ footer {
 	font-size: 21px;
     line-height: 0px;
     font-weight: bold;
+}
+.footer-item:last-child a {
+	font-size: 21px;
+    line-height: 0px;
+    padding-left: 12px;     
 }
 .footer-item span {
 	position: relative;
