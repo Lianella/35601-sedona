@@ -391,7 +391,7 @@ header {
 }
 /*--------------------------Форма на главной------------------*/
 .search-hotels {	
-	/*display: none;*/  /*для скрытия формы*/
+	display: none;*/  /*для скрытия формы*/
 	width: 570px;
 	margin-top: -200px;	
 	background-color: #ffffff;
@@ -399,6 +399,9 @@ header {
 	box-shadow: 7px 0 15px rgba(0, 1, 1, 0.15),
 			   -7px 0 15px rgba(0, 1, 1, 0.15),
 			    0px 7px 15px rgba(0, 1, 1, 0.15);
+}
+.search-hotels-show {  /*-----для JS появления формы-------*/
+	display: block;
 }
 .search-hotels .btn {
 	width: 100%;
