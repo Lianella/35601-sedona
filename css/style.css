@@ -433,7 +433,7 @@ header {
 	position: absolute;
 	top: 200px;
 	left: 50%;
-	display: none;*/  /*для скрытия формы*/
+	display: none;  /*для скрытия формы*/
 	width: 570px;
 	margin-top: -200px;	
 	margin-left: -285px;
@@ -795,7 +795,7 @@ footer {
 	        -webkit-justify-content: center;
 	        justify-content: center;
 	background-image: url(../img/filter-background.jpg);
-	background-color: #88b6d1
+	background-color: #88b6d1;
 	color: #ffffff;
 	padding: 27px 72px 31px;	
 }
