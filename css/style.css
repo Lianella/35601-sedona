@@ -402,6 +402,25 @@ header {
 }
 .search-hotels-show {  /*-----для JS появления формы-------*/
 	display: block;
+	animation: bounce 0.5s;
+}
+/*---------анимация для формы-----------------*/
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  80%  {
+    transform: translateY(20px);
+  }
+  90%  {
+    transform: translateY(10px);
+  } 
+  100% {
+    transform: translateY(0);
+  }
 }
 .search-hotels .btn {
 	width: 100%;
@@ -631,17 +650,17 @@ footer {
 	vertical-align: top;
 	width: 115px;
 	height: 40px;
-	background: #ffffff url(../img/spritesheet.png) no-repeat;
+	background: transparent url(../img/spritesheet.png) no-repeat;
 	background-position: -79px -209px;
 	top: -50%;	
 	right: 10px;
 }
 .footer-item span:hover::after {
-	background: #ffffff url(../img/spritesheet.png) no-repeat;
+	background: transparent url(../img/spritesheet.png) no-repeat;
 	background-position: -251px -54px;
 }
 .footer-item span:active::after {
-	background: #ffffff url(../img/spritesheet.png) no-repeat;
+	background: transparent url(../img/spritesheet.png) no-repeat;
 	background-position: -274px -5px;
 }
 .icon {
