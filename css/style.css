@@ -795,11 +795,13 @@ footer {
 	        -webkit-justify-content: center;
 	        justify-content: center;
 	background-image: url(../img/filter-background.jpg);
-	color: #88b6d1;
+	background-color: #88b6d1
+	color: #ffffff;
 	padding: 27px 72px 31px;	
 }
 .quest {
 	width: 254px;
+	color: #ffffff;
 }
 .quest:last-child {
 	margin-left: -44px;
@@ -869,6 +871,7 @@ li .checkbox:disabled + label::before {
  	font-size: 0;
   	border: 2px solid #ffffff;
   	border-radius: 2px;
+  	color: #ffffff;
 }
 .quest-price-control label {
   	display: inline-block;
