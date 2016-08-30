@@ -609,17 +609,17 @@ header {
 	width: 12px;
 	height: 12px;
 	border: none;
-	background: transparent url(../img/spritesheet.png) no-repeat;
+	background: transparent url(../img/spritesheet.png) no-repeat center;
 	background-position: -374px -54px;
 	top: 13px;		
 }
 .minus:hover {
-	background: transparent url(../img/spritesheet.png) no-repeat;
+	background: transparent url(../img/spritesheet.png) no-repeat center;
 	background-position: -374px -98px;
 }
 .minus:active {
 	outline: none;
-	background: transparent url(../img/spritesheet.png) no-repeat;
+	background: transparent url(../img/spritesheet.png) no-repeat center;
 	background-position: -374px -76px;
 }
 .minus-grown {
@@ -634,17 +634,17 @@ header {
 	width: 11px;
 	height: 11px;
 	border: none;
-	background: transparent url(../img/spritesheet.png) no-repeat;
+	background: transparent url(../img/spritesheet.png) no-repeat center;
 	background-position: -249px -120px;
 	top: 13.5px;
 }
 .plus:hover {
-	background: transparent url(../img/spritesheet.png) no-repeat;
+	background: transparent url(../img/spritesheet.png) no-repeat center;
 	background-position: -291px -120px;
 }
 .plus:active {
 	outline: none;
-	background: transparent url(../img/spritesheet.png) no-repeat;
+	background: transparent url(../img/spritesheet.png) no-repeat center;
 	background-position: -270px -120px;
 }
 .plus-grown {
