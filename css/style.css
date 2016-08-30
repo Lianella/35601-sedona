@@ -716,7 +716,7 @@ footer {
 	    -ms-flex-pack: center;
 	        justify-content: center;
 	background-image: url(../img/filter-background.jpg);
-	color: #ffffff;
+	color: #88b6d1;
 	padding: 27px 72px 31px;	
 }
 .quest {
@@ -1105,11 +1105,9 @@ i {
 	line-height: 21px;
 }
 .info-link a, .info-span a {
-
+	text-align: center;
 	font-weight: bold;
-	padding-top: 3px;	
-	padding-left: 17px;
-	padding-right: 16px;
+	padding-top: 3px;		
 	padding-bottom: 3px;
 	color: #ffffff;	
 }
@@ -1138,6 +1136,7 @@ i {
 	        flex-direction: row;
 }
 .info-span, .info-link {	
+	max-width: 110px;
 	flex-wrap: wrap;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1146,6 +1145,9 @@ i {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
+}
+.info-link {
+	max-width: 140px;
 }
 .info-list span, .info-span span {
 	padding-bottom: 13px;
