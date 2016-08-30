@@ -71,15 +71,19 @@ p {
 .navigation-list {
 	display: -webkit-box;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
+	        -webkit-flex-direction: row;
 	        flex-direction: row;
 	-ms-flex-pack: distribute;
-	    justify-content: space-around;	
+	    -webkit-justify-content: space-around;
+	        justify-content: space-around;	
 	-ms-flex-wrap: wrap;	
-	    flex-wrap: wrap;  /*для переполнения меню*/
+	    -webkit-flex-wrap: wrap;	
+	        flex-wrap: wrap;  /*для переполнения меню*/
 
 }
 li {	
@@ -138,13 +142,16 @@ header {
 .title {
 	display: -webkit-box;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
+	        -webkit-flex-direction: column;
 	        flex-direction: column;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
+	        -webkit-justify-content: center;
 	        justify-content: center;
 	z-index: 10;
 	background: #e5f2fa url(../img/background-photo.jpg);
@@ -155,7 +162,8 @@ header {
 	width: 458px;
 	height: 352px;
 	-ms-flex-item-align: center;
-	    align-self: center;
+	    -webkit-align-self: center;
+	        align-self: center;
 	margin-bottom: 23px;
 }
 .title img:last-child {	
@@ -163,18 +171,22 @@ header {
 	height: 57px;
 	height: auto;
 	-ms-flex-item-align: center;
-	    align-self: center;
+	    -webkit-align-self: center;
+	        align-self: center;
 }
 .description {	
 	display: -webkit-box;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
+	        -webkit-flex-direction: column;
 	        flex-direction: column;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
+	        -webkit-justify-content: center;
 	        justify-content: center;
 	padding-top: 60px;
 	padding-bottom: 51px;
@@ -184,26 +196,31 @@ header {
 }
 .description h2 {
 	-ms-flex-item-align: center;
-	    align-self: center;		
+	    -webkit-align-self: center;
+	        align-self: center;		
 	text-align: center;
 	line-height: 26px;
 }
 .description p {	
 	padding-top: 27px;
 	-ms-flex-item-align: center;
-	    align-self: center;		
+	    -webkit-align-self: center;
+	        align-self: center;		
 }
 /* ----------Причины посетить Седону---------------------*/
 .reasons {
 	display: -webkit-box;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
+	        -webkit-flex-direction: row;
 	        flex-direction: row;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
+	        -webkit-justify-content: center;
 	        justify-content: center;
 }
 .reasons-blue {
@@ -219,18 +236,22 @@ header {
 .reasons-item {
 	display: -webkit-box;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
+	        -webkit-flex-direction: column;
 	        flex-direction: column;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
+	        -webkit-justify-content: center;
 	        justify-content: center;
 	text-align: center;		
 	width: 400px;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
+	        -webkit-align-items: center;
 	        align-items: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -252,7 +273,8 @@ header {
 	width: 800px;
 	height: 256px;
 	-ms-flex-item-align: center;
-	    align-self: center;
+	    -webkit-align-self: center;
+	        align-self: center;
 	line-height: 0; 
 	overflow: hidden;
 }
@@ -266,13 +288,16 @@ header {
 .internals-white {
 	display: -webkit-box;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
+	        -webkit-flex-direction: row;
 	        flex-direction: row;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
+	        -webkit-justify-content: center;
 	        justify-content: center;
 	padding-top: 53px;
 	padding-bottom: 81px;
@@ -282,17 +307,21 @@ header {
 	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
+	        -webkit-flex-direction: column;
 	        flex-direction: column;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
+	        -webkit-justify-content: center;
 	        justify-content: center;
 	width: 400px;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
+	        -webkit-align-items: center;
 	        align-items: center;
 	text-align: center;	
 	padding-left: 50px;
@@ -331,16 +360,20 @@ header {
 	position: relative; /*для привязки футера*/
 	display: -webkit-box;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
+	        -webkit-flex-direction: column;
 	        flex-direction: column;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
+	        -webkit-justify-content: center;
 	        justify-content: center;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
+	        -webkit-align-items: center;
 	        align-items: center;
 	text-align: center;
 	padding-left: 312px;
@@ -378,16 +411,20 @@ header {
 	height: 593px;	
 	display: -webkit-box;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
+	        -webkit-flex-direction: column;
 	        flex-direction: column;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
+	        -webkit-justify-content: center;
 	        justify-content: center;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
+	        -webkit-align-items: center;
 	        align-items: center;
 	background-image: url(../img/search-maps.jpg);
 }
@@ -408,24 +445,52 @@ header {
 }
 .search-hotels-show {  /*-----для JS появления формы-------*/
 	display: block;
-	animation: bounce 0.5s;
+	-webkit-animation: bounce 0.5s;
+	        animation: bounce 0.5s;
 }
 /*---------анимация для формы-----------------*/
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0%   {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
   70%  {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
   80%  {
-    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
   90%  {
-    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   } 
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes bounce {
+  0%   {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70%  {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  80%  {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  90%  {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  } 
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 .search-hotels .btn {
@@ -592,18 +657,23 @@ header {
 footer {	
 	display: -webkit-box;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
+	        -webkit-flex-direction: row;
 	        flex-direction: row;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
+	        -webkit-justify-content: center;
 	        justify-content: center;
 	-ms-flex-line-pack: distribute;
-	    align-content: space-around;
+	    -webkit-align-content: space-around;
+	        align-content: space-around;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
+	        -webkit-align-items: center;
 	        align-items: center;
 	background: #ffffff;
 	padding-top: 38px;
@@ -617,22 +687,28 @@ footer {
 .footer-item {
 	width: 400px;
 	-ms-flex-item-align: center;
-	    align-self: center;
+	    -webkit-align-self: center;
+	        align-self: center;
 	text-align: center;
 
 }
 .footer-item ul {
 	display: -webkit-box;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
+	        -webkit-flex-direction: row;
 	        flex-direction: row;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
+	        -webkit-justify-content: center;
 	        justify-content: center;
-	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 }
 .footer-item:first-child a {
 	font-size: 21px;
@@ -707,13 +783,16 @@ footer {
 .quest-form {
 	display: -webkit-box;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
+	        -webkit-flex-direction: row;
 	        flex-direction: row;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
+	        -webkit-justify-content: center;
 	        justify-content: center;
 	background-image: url(../img/filter-background.jpg);
 	color: #88b6d1;
@@ -821,7 +900,8 @@ li .checkbox:disabled + label::before {
   	height: 22px;
   	background: #ffffff;
   	-webkit-transform: translate(-50%, -50%);
-  	        transform: translate(-50%, -50%);
+  	        -ms-transform: translate(-50%, -50%);
+  	    transform: translate(-50%, -50%);
 }
 .quest-range {
   	position: relative;
@@ -888,16 +968,19 @@ li .checkbox:disabled + label::before {
 .quest-sorting, .hotels { /*section и article после формы*/
 	display: -webkit-box;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
+	        -webkit-flex-direction: row;
 	        flex-direction: row;	
 }
 .quest-sorting {   /*Сортировка по типу рейтингу*/
 	-webkit-box-align: end;
 	    -ms-flex-align: end;
 	            -ms-grid-row-align: flex-end;
+	        -webkit-align-items: flex-end;
 	        align-items: flex-end;
 	background-color: #fefefe;
 	padding-top: 31px;
@@ -906,13 +989,16 @@ li .checkbox:disabled + label::before {
 .quest-picking { /* ul в quest-sorting*/
 	display: -webkit-box;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
+	        -webkit-flex-direction: row;
 	        flex-direction: row;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
+	        -webkit-align-items: center;
 	        align-items: center;
 }
 .quest-picking li a {
@@ -960,13 +1046,16 @@ li .checkbox:disabled + label::before {
 .quest-arrow ul{	
 	display: -webkit-box;	
 	display: -ms-flexbox;	
+	display: -webkit-flex;	
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
+	        -webkit-flex-direction: row;
 	        flex-direction: row;
 	-webkit-box-pack: end;
 	    -ms-flex-pack: end;
+	        -webkit-justify-content: flex-end;
 	        justify-content: flex-end;	
 	position: relative;
 }
@@ -1051,10 +1140,12 @@ li .checkbox:disabled + label::before {
 	width: 781px;
 	display: -webkit-box;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
+	        -webkit-flex-direction: column;
 	        flex-direction: column;
 }
 .hotels-info h2 {
@@ -1072,13 +1163,16 @@ li .checkbox:disabled + label::before {
 .stars {
 	display: -webkit-box;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
+	        -webkit-flex-direction: row;
 	        flex-direction: row;
 	-webkit-box-pack: end;
 	    -ms-flex-pack: end;
+	        -webkit-justify-content: flex-end;
 	        justify-content: flex-end;
 	padding-bottom: 46px;
 	
@@ -1129,21 +1223,27 @@ i {
 .info-list {
 	display: -webkit-box;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
+	        -webkit-flex-direction: row;
 	        flex-direction: row;
 }
 .info-span, .info-link {	
 	max-width: 110px;
-	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 	display: -webkit-box;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
+	        -webkit-flex-direction: column;
 	        flex-direction: column;
 }
 .info-link {
