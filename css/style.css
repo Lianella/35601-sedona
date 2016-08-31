@@ -1118,6 +1118,10 @@ li .checkbox:disabled + label::before {
 	padding-right: 72px;
 	background-color: #fefefe;
 }
+.quest-form {
+	background-color: #81b3d2; 
+}
+
 .hotels {
 	padding-top: 27px;
 	padding-bottom: 29px;
@@ -1148,7 +1152,7 @@ li .checkbox:disabled + label::before {
 .hotels-info h2 {
 	font-size: 21px;    
     line-height: 21px;
-    font-weight: bold;
+    font-weight: normal;
     padding-bottom: 11px;
 }
 .hotels-info h2:hover {
@@ -1187,12 +1191,12 @@ i {
 .rating {
 	width: 100%;
 	text-align: center;
-	padding-top: 2px;
-	padding-bottom: 5px;	
+	padding-top: 3px;
+	padding-bottom: 4px;	
 	background-color: #f2f2f2;
 	
 }
-.rating span {
+.rating span {	
 	line-height: 21px;
 }
 .info-link a, .info-span a {
